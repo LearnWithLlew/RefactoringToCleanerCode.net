@@ -20,20 +20,67 @@
 5. Pulled out parameters
 6. Pulled out paragraphs from each case
 7. Removed `goto`.
-8. 
+
+# Rules for today's refactorings
+
+- [ ] Automated refactorings "only"
+- [ ] Commit after each refactoring
+- [ ] Every commit prefixed with `r   `
+- [ ] Rotate typist on commit
+  - [ ] Maybe switch to timer after first rotation
+
+# Show Sparrow decks
+
+- Sparrows
+- Paragraphs
+- Long methods
+
+# Smell: bad names
+
+- [ ] Missing/Misleading -> Nonsense
+- [ ] Nonsense -> Honest (but incomplete)
+- [ ] Honest -> Honest-and-complete
+- [ ] Honest-and-Complete -> Does the right thing
+- [ ] Does the right thing -> Intent
+- [ ] Intent -> Domain Abstraction
+
+# Smell: Long Switch
+
+- [ ] Extract every case
+- [ ] Convert dispatch to strategy
+  - [ ] switch->if/else
+  - [ ] Extract class
+  - [ ] Convert first `if` to many-of-one
+  - [ ] Convert next to many
 
 
 
 
 
-* [ ] Pull out paragraphs from each case
-    
-    * [ ] Start with a nonsense names
-    * [ ] Tried to pull
-    * [ ] Uncomment the REQUIRE line
-    * Confirmation: See failure message
-    
-    
+
+
+# Smell: Long Method
+
+- [ ] Identify a paragraph
+- [ ] extract it
+- [ ] Does the paragraph you extracted make sense?
+	
+
+# Smell: Improper class
+
+- [ ] figure out what doesn't belong in the class and move it to another class
+
+# Smell: Duplication
+
+- [ ] Make similar things identical
+- [ ] Extract the duplication
+- [ ] 
+
+# Smell: Duplication
+
+- [ ] Extract interface
+
+
 
 ## Homework
 
