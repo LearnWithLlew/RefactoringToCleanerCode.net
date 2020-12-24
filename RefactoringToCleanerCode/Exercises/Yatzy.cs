@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Yatzy
+﻿namespace Yatzy
 {
     public static class Yatzy
     {
@@ -232,19 +230,24 @@ namespace Yatzy
     public enum ScoringType
     {
         Chance,
+
         Ones,
         Twos,
         Threes,
+
         Pair,
         TwoPair,
         FullHouse,
-        Yatzy,
         FourOfAKind,
         ThreeOfAKind,
+
         SmallStraight,
         LargeStraight,
+
         Fours,
         Sixes,
-        Fives
+        Fives,
+
+        Yatzy,
     }
 }
