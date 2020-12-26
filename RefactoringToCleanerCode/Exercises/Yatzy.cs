@@ -1,4 +1,6 @@
-﻿namespace Yatzy
+﻿using System.Linq;
+
+namespace Yatzy
 {
     public static class Yatzy
     {
@@ -215,11 +217,7 @@
                 case ScoringType.Sixes:
                 {
                     int[] dice = new[] {d1, d2, d3, d4, d5};
-                    var sum3 = 0;
-                    for (var at1 = 0; at1 < dice.Length; at1++)
-                        if (dice[at1] == 6)
-                            sum3 = sum3 + 6;
-                    return sum3;
+                    return dice.Where(d => d == 6).Sum();
                 }
             }
 
