@@ -6,6 +6,7 @@ namespace Yatzy
     {
         public static int GetScore(ScoringType scoringType, int d1, int d2, int d3, int d4, int d5)
         {
+            const int bigScore = 50;
             switch (scoringType)
             {
                 case ScoringType.Chance:
@@ -129,7 +130,10 @@ namespace Yatzy
                         counts2[die - 1]++;
                     for (var i1 = 0; i1 != 6; i1++)
                         if (counts2[i1] == 5)
-                            return 50;
+                        {
+                            return bigScore;
+                        }
+
                     return 0;
                 }
                 case ScoringType.FourOfAKind:
