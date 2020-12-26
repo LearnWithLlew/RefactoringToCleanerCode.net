@@ -194,30 +194,30 @@
                 }
                 case ScoringType.Fours:
                 {
-                    int[] dice2 = new[] {d1, d2, d3, d4, d5};
+                    int[] dice = new[] {d1, d2, d3, d4, d5};
                     int sum2;
                     sum2 = 0;
                     for (var at1 = 0; at1 != 5; at1++)
-                        if (dice2[at1] == 4)
+                        if (dice[at1] == 4)
                             sum2 += 4;
                     return sum2;
                 }
                 case ScoringType.Fives:
                 {
-                    int[] dice3 = new[] {d1, d2, d3, d4, d5};
+                    int[] dice = new[] {d1, d2, d3, d4, d5};
                     var s1 = 0;
                     int i1;
-                    for (i1 = 0; i1 < dice3.Length; i1++)
-                        if (dice3[i1] == 5)
+                    for (i1 = 0; i1 < dice.Length; i1++)
+                        if (dice[i1] == 5)
                             s1 = s1 + 5;
                     return s1;
                 }
                 case ScoringType.Sixes:
                 {
-                    int[] dice4 = new[] {d1, d2, d3, d4, d5};
+                    int[] dice = new[] {d1, d2, d3, d4, d5};
                     var sum3 = 0;
-                    for (var at1 = 0; at1 < dice4.Length; at1++)
-                        if (dice4[at1] == 6)
+                    for (var at1 = 0; at1 < dice.Length; at1++)
+                        if (dice[at1] == 6)
                             sum3 = sum3 + 6;
                     return sum3;
                 }
