@@ -2,16 +2,11 @@
 
 ## Testing Functional Code
 
-**In File:** `https://github.com/dotnet/roslyn/blob/master/src/Compilers/CSharp/CSharpAnalyzerDriver/CSharpDeclarationComputer.cs`
-
 * [ ] Validate environment
     * [ ] Run the test
-    * [ ] Fix the test
-**In File:** `exercises/exercise1/tests/TrigMathTests.cpp`
+    * [ ] Turn on NCrunch & show Risk/Progress window
 
 **Scenario:** In this scenario, we are looking at large method that we don't understand, and we want to clean up. We are going to "follow our nose", leaning into the places we don't like and pulling out chunks and improving them.
-
-
 
 1. Pulled out paragraphs from each case
 2. Pulled out parameter object
@@ -38,18 +33,33 @@
 # Smell: bad names
 
 - [ ] Missing/Misleading -> Nonsense
+
 - [ ] Nonsense -> Honest (but incomplete)
+
 - [ ] Honest -> Honest-and-complete
+
 - [ ] Honest-and-Complete -> Does the right thing
+
 - [ ] Does the right thing -> Intent
+
 - [ ] Intent -> Domain Abstraction
+# Smell: Inconsistency
+
+- [ ] make consistent
+
+  (surfaces duplication)
+
+  
 
 # Smell: Long Switch
 
-- [ ] Extract every case
+- [ ] Prerequisite: every case is a single call
 - [ ] Convert dispatch to strategy
   - [ ] switch->if/else
-  - [ ] Extract class
+  - [ ] Remove redundant `else`
+  - [ ] Extract method on condition
+  - [ ] Move condition and action to another type
+    - [ ] 
   - [ ] Convert first `if` to many-of-one
   - [ ] Convert next to many
 
