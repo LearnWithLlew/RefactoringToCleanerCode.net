@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Yatzy
 {
@@ -18,53 +20,6 @@ namespace Yatzy
                     total += d4;
                     total += d5;
                     return total;
-                }
-                case ScoringType.Ones:
-                {
-                    var sum = 0;
-                    if (d1 == 1) sum++;
-                    if (d2 == 1) sum++;
-                    if (d3 == 1) sum++;
-                    if (d4 == 1) sum++;
-                    if (d5 == 1)
-                        sum++;
-
-                    return sum;
-                }
-                case ScoringType.Twos:
-                {
-                    var sum1 = 0;
-                    if (d1 == 2) sum1 += 2;
-                    if (d2 == 2) sum1 += 2;
-                    if (d3 == 2) sum1 += 2;
-                    if (d4 == 2) sum1 += 2;
-                    if (d5 == 2) sum1 += 2;
-                    return sum1;
-                }
-                case ScoringType.Threes:
-                {
-                    int s;
-                    s = 0;
-                    if (d1 == 3) s += 3;
-                    if (d2 == 3) s += 3;
-                    if (d3 == 3) s += 3;
-                    if (d4 == 3) s += 3;
-                    if (d5 == 3) s += 3;
-                    return s;
-                }
-                case ScoringType.Pair:
-                {
-                    var counts = new int[6];
-                    counts[d1 - 1]++;
-                    counts[d2 - 1]++;
-                    counts[d3 - 1]++;
-                    counts[d4 - 1]++;
-                    counts[d5 - 1]++;
-                    int at;
-                    for (at = 0; at != 6; at++)
-                        if (counts[6 - at - 1] >= 2)
-                            return (6 - at) * 2;
-                    return 0;
                 }
                 case ScoringType.TwoPair:
                 {
@@ -136,34 +91,6 @@ namespace Yatzy
 
                     return 0;
                 }
-                case ScoringType.FourOfAKind:
-                {
-                    int[] tallies1;
-                    tallies1 = new int[6];
-                    tallies1[d1 - 1]++;
-                    tallies1[d2 - 1]++;
-                    tallies1[d3 - 1]++;
-                    tallies1[d4 - 1]++;
-                    tallies1[d5 - 1]++;
-                    for (var i1 = 0; i1 < 6; i1++)
-                        if (tallies1[i1] >= 4)
-                            return (i1 + 1) * 4;
-                    return 0;
-                }
-                case ScoringType.ThreeOfAKind:
-                {
-                    int[] t;
-                    t = new int[6];
-                    t[d1 - 1]++;
-                    t[d2 - 1]++;
-                    t[d3 - 1]++;
-                    t[d4 - 1]++;
-                    t[d5 - 1]++;
-                    for (var i1 = 0; i1 < 6; i1++)
-                        if (t[i1] >= 3)
-                            return (i1 + 1) * 3;
-                    return 0;
-                }
                 case ScoringType.SmallStraight:
                 {
                     int[] tallies2;
@@ -198,30 +125,56 @@ namespace Yatzy
                         return 20;
                     return 0;
                 }
+                case ScoringType.Ones:
+                case ScoringType.Twos:
+                case ScoringType.Threes:
                 case ScoringType.Fours:
-                {
-                    int[] dice = new[] {d1, d2, d3, d4, d5};
-                    int sum2;
-                    sum2 = 0;
-                    for (var at1 = 0; at1 != 5; at1++)
-                        if (dice[at1] == 4)
-                            sum2 += 4;
-                    return sum2;
-                }
                 case ScoringType.Fives:
-                {
-                    int[] dice = new[] {d1, d2, d3, d4, d5};
-                    var s1 = 0;
-                    int i1;
-                    for (i1 = 0; i1 < dice.Length; i1++)
-                        if (dice[i1] == 5)
-                            s1 = s1 + 5;
-                    return s1;
-                }
                 case ScoringType.Sixes:
                 {
-                    int[] dice = new[] {d1, d2, d3, d4, d5};
-                    return dice.Where(d => d == 6).Sum();
+                    var value = new Dictionary<ScoringType, int>
+                    {
+                        {ScoringType.Ones, 1},
+                        {ScoringType.Twos, 2},
+                        {ScoringType.Threes, 3},
+                        {ScoringType.Fours, 4},
+                        {ScoringType.Fives, 5},
+                        {ScoringType.Sixes, 6},
+                    }[scoringType];
+                    ;
+                    int s;
+                    s = 0;
+                    if (d1 == value) s += value;
+                    if (d2 == value) s += value;
+                    if (d3 == value) s += value;
+                    if (d4 == value) s += value;
+                    if (d5 == value) s += value;
+                    return s;
+                }
+                case ScoringType.FourOfAKind:
+                case ScoringType.Pair:
+                case ScoringType.ThreeOfAKind:
+                {
+                    var value = new Dictionary<ScoringType, int>
+                    {
+                        {ScoringType.Pair, 2},
+                        {ScoringType.FourOfAKind, 4},
+                        {ScoringType.ThreeOfAKind, 3},
+                    }[scoringType];
+                    int[] tallies1;
+                    tallies1 = new int[6];
+                    tallies1[d1 - 1]++;
+                    tallies1[d2 - 1]++;
+                    tallies1[d3 - 1]++;
+                    tallies1[d4 - 1]++;
+                    tallies1[d5 - 1]++;
+                    for (int i = 6 - 1; i >= 0; i--)
+                    {
+                        if (tallies1[i] >= value)
+                            return (i + 1) * value;
+                    }
+
+                    return 0;
                 }
             }
 
