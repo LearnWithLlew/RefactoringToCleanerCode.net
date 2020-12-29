@@ -4,6 +4,7 @@
 2. Set up machine
 3. Get slides onto machine
 4. Make a branch
+5. Enable `Show procedure line separators`
 
 # Course Outline
 
