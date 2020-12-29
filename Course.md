@@ -67,7 +67,12 @@
 
 
 
+# Refactoring Combo: Make non-static
 
+1. Introduce unused local instance variable in method
+2. Introduce parameter
+3. Make method non-static
+4. 
 
 # Smell: Long Method
 
