@@ -6,29 +6,29 @@ namespace Yatzy
 {
     public static class Yatzy
     {
-        public static int GetScore(ScoringType scoringType, int d1, int d2, int d3, int d4, int d5)
+        public static int GetScore(ScoringType st, int die1, int secondNumber, int third, int d4, int dice5)
         {
             const int bigScore = 50;
-            switch (scoringType)
+            switch (st)
             {
                 case ScoringType.Chance:
                 {
                     var total = 0;
-                    total += d1;
-                    total += d2;
-                    total += d3;
+                    total += die1;
+                    total += secondNumber;
+                    total += third;
                     total += d4;
-                    total += d5;
+                    total += dice5;
                     return total;
                 }
                 case ScoringType.TwoPair:
                 {
                     var counts1 = new int[6];
-                    counts1[d1 - 1]++;
-                    counts1[d2 - 1]++;
-                    counts1[d3 - 1]++;
+                    counts1[die1 - 1]++;
+                    counts1[secondNumber - 1]++;
+                    counts1[third - 1]++;
                     counts1[d4 - 1]++;
-                    counts1[d5 - 1]++;
+                    counts1[dice5 - 1]++;
                     var n = 0;
                     var score = 0;
                     for (var i = 0; i < 6; i += 1)
@@ -53,11 +53,11 @@ namespace Yatzy
 
 
                     tallies = new int[6];
-                    tallies[d1 - 1] += 1;
-                    tallies[d2 - 1] += 1;
-                    tallies[d3 - 1] += 1;
+                    tallies[die1 - 1] += 1;
+                    tallies[secondNumber - 1] += 1;
+                    tallies[third - 1] += 1;
                     tallies[d4 - 1] += 1;
-                    tallies[d5 - 1] += 1;
+                    tallies[dice5 - 1] += 1;
 
                     for (i = 0; i != 6; i += 1)
                         if (tallies[i] == 2)
@@ -79,7 +79,7 @@ namespace Yatzy
                 }
                 case ScoringType.Yatzy:
                 {
-                    int[] dice1 = new[] {d1, d2, d3, d4, d5};
+                    int[] dice1 = new[] {die1, secondNumber, third, d4, dice5};
                     var counts2 = new int[6];
                     foreach (var die in dice1)
                         counts2[die - 1]++;
@@ -95,11 +95,11 @@ namespace Yatzy
                 {
                     int[] tallies2;
                     tallies2 = new int[6];
-                    tallies2[d1 - 1] += 1;
-                    tallies2[d2 - 1] += 1;
-                    tallies2[d3 - 1] += 1;
+                    tallies2[die1 - 1] += 1;
+                    tallies2[secondNumber - 1] += 1;
+                    tallies2[third - 1] += 1;
                     tallies2[d4 - 1] += 1;
-                    tallies2[d5 - 1] += 1;
+                    tallies2[dice5 - 1] += 1;
                     if (tallies2[0] == 1 &&
                         tallies2[1] == 1 &&
                         tallies2[2] == 1 &&
@@ -112,11 +112,11 @@ namespace Yatzy
                 {
                     int[] tallies3;
                     tallies3 = new int[6];
-                    tallies3[d1 - 1] += 1;
-                    tallies3[d2 - 1] += 1;
-                    tallies3[d3 - 1] += 1;
+                    tallies3[die1 - 1] += 1;
+                    tallies3[secondNumber - 1] += 1;
+                    tallies3[third - 1] += 1;
                     tallies3[d4 - 1] += 1;
-                    tallies3[d5 - 1] += 1;
+                    tallies3[dice5 - 1] += 1;
                     if (tallies3[1] == 1 &&
                         tallies3[2] == 1 &&
                         tallies3[3] == 1 &&
@@ -140,15 +140,15 @@ namespace Yatzy
                         {ScoringType.Fours, 4},
                         {ScoringType.Fives, 5},
                         {ScoringType.Sixes, 6},
-                    }[scoringType];
+                    }[st];
                     ;
                     int s;
                     s = 0;
-                    if (d1 == value) s += value;
-                    if (d2 == value) s += value;
-                    if (d3 == value) s += value;
+                    if (die1 == value) s += value;
+                    if (secondNumber == value) s += value;
+                    if (third == value) s += value;
                     if (d4 == value) s += value;
-                    if (d5 == value) s += value;
+                    if (dice5 == value) s += value;
                     return s;
                 }
                 case ScoringType.FourOfAKind:
@@ -160,14 +160,14 @@ namespace Yatzy
                         {ScoringType.Pair, 2},
                         {ScoringType.FourOfAKind, 4},
                         {ScoringType.ThreeOfAKind, 3},
-                    }[scoringType];
+                    }[st];
                     int[] tallies1;
                     tallies1 = new int[6];
-                    tallies1[d1 - 1]++;
-                    tallies1[d2 - 1]++;
-                    tallies1[d3 - 1]++;
+                    tallies1[die1 - 1]++;
+                    tallies1[secondNumber - 1]++;
+                    tallies1[third - 1]++;
                     tallies1[d4 - 1]++;
-                    tallies1[d5 - 1]++;
+                    tallies1[dice5 - 1]++;
                     for (int i = 6 - 1; i >= 0; i--)
                     {
                         if (tallies1[i] >= value)

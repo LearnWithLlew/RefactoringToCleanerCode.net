@@ -84,8 +84,8 @@ Course Section 1
 # Refactoring Combo: Make non-static
 
   1. Introduce unused local instance variable in method
-  2. Introduce parameter
-  3. Make method non-static
+    2. Introduce parameter
+         3. Make method non-static
 
 # Homework
 
