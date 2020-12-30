@@ -1,0 +1,8 @@
+ScoreChance
+ScoreTwoPair
+ScoreFullHouse
+ScoreYatzy
+ScoreSmallStraight
+ScoreLargeStraight
+ScoreNumber
+ScoreOfAKind
