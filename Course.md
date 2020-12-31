@@ -12,7 +12,7 @@ Course Section 1
 
 - Automated refactorings "only" 
 - Commit after each refactoring
-- Every commit prefixed with `r   `
+- Every commit prefixed with `r   ` (r with three spaces)
 - Rotate typist on commit
 
 # Improvement Loop
@@ -64,7 +64,10 @@ Course Section 1
   - [ ] Remove redundant `else`
   - [ ] Extract method on condition
   - [ ] Move condition and action to another type
-  - [ ] Refactoring Combo: Make non-static
+  - [ ] Refactoring Combo: Make non-static 
+  - [ ] Add braces around if condition
+  - [ ] Extract local variable of strategy Class instance
+  - [ ] Extract Interface
   - [ ] Convert first `if` to many-of-one
   - [ ] Convert next to many
 
@@ -84,7 +87,7 @@ Course Section 1
 # Refactoring Combo: Make non-static
 
   1. Introduce unused local instance variable in method
-    2. Introduce parameter
+        2. Introduce parameter
          3. Make method non-static
 
 # Homework

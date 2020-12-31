@@ -14,8 +14,8 @@ namespace Exercises.Tests
         {
             var dice = new[] {1, 2, 3, 4, 5, 6};
             CombinationApprovals.VerifyAllCombinations(
-                (a, b, c, d, e, f) =>  Yatzy.Yatzy.GetScore(a, b, c, d, e, f),
-                (Yatzy.ScoringType[]) Enum.GetValues(typeof(Yatzy.ScoringType)), dice, dice, dice, dice, dice);
+                (a, b, c, d, e, f) => BigDiceGame.GetScore(a, b, c, d, e, f),
+                (ScoringType[]) Enum.GetValues(typeof(ScoringType)), dice, dice, dice, dice, dice);
         }
     }
 }
