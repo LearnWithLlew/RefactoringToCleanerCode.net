@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -7,15 +8,16 @@ namespace Exercises.Tests
 {
     [UseReporter(typeof(DiffReporter))]
     [TestClass]
-    public class UnitTest1
+    public class PinningTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void PinEverything()
         {
             var dice = new[] {1, 2, 3, 4, 5, 6};
+            var scoringTypes = Enum.GetValues(typeof(ScoringType)).Cast<ScoringType>().Append((ScoringType) (-1));
             CombinationApprovals.VerifyAllCombinations(
                 (a, b, c, d, e, f) => BigDiceGame.GetScore(a, b, c, d, e, f),
-                (ScoringType[]) Enum.GetValues(typeof(ScoringType)), dice, dice, dice, dice, dice);
+                scoringTypes, dice, dice, dice, dice, dice);
         }
     }
 }
