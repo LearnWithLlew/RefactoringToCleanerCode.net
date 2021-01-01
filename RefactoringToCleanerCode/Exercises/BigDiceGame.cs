@@ -6,6 +6,7 @@ public static class BigDiceGame
 {
     public static int GetScore(ScoringType st, int die1, int secondDie, int d3, int dice4, int fifth)
     {
+        const int bigScore = 50;
         switch (st)
         {
             case ScoringType.Pair:
@@ -103,6 +104,4 @@ public static class BigDiceGame
 
         return 0;
     }
-
-    const int bigScore = 50;
 }
