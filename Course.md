@@ -1,39 +1,67 @@
-Course Section 1 
-
-## Testing Functional Code
+## Refactoring to Cleaner Code
 
 * [ ] Validate environment
     * [ ] Run the test
-    * [ ] Turn on NCrunch & show Risk/Progress window
+* [ ] NCrunch
+    * [ ] Enable
+    * [ ] Show Risk/Progress window floating
 
-**Scenario:** In this scenario, we are looking at large method that we don't understand, and we want to clean up. We are going to "follow our nose", leaning into the places we don't like and pulling out chunks and improving them.
+## Scenario
 
-# Starting Rules for today's refactorings
+We are looking at large method that we don't understand, and we want to clean up. We are going to "follow our nose", leaning into the places we don't like and pulling out chunks and improving them.
+
+## Starting Rules for today's refactorings
 
 - Automated refactorings "only" 
 - Commit after each refactoring
-- Every commit prefixed with `r   ` (r with three spaces)
+- Every commit prefixed with `r -    `
 - Rotate typist on commit
 
-# Improvement Loop
+## Improvement Loop
 
-- [ ] Identify a smell
-- [ ] Improve it
-- [ ] Commit
+1. Identify a smell
+2. Improve it
+3. Evaluate
+4. Commit (or revert)
 
-# Smells to look for
+- [ ] ## Restriction 1: Extract Paragraphs to methods
 
-* Bad Names
-* Inconsistency
-* Long Switch
-* Long Method
-* Improper Class
-* Duplication
-* Mixed responsibilities / levels of abstraction
+    1. Identify a paragraph
+    2. Extract a method
+    3. Evaluate the signature (ignore the body)
+    4. Fix or revert and try again
+    5. Commit
+    
+- [ ] ## Restriction 2: Move methods onto new classes
+
+    1. Find a method
+    2. Move into a better class
+    3. Evaluate signature
+    4. Commit
+
+- [ ] ## Restriction 3: Clean up the main method
+
+	1. Convert `switch` to `if`/`else`
+	2. Remove redundant code
+	3. Extract condition and move onto class
+	4. Commit
+	
+ - [ ] ## Restriction 4: Remove duplication
+
+    1. Make similar things identical
+    2. Apply Refactoring Combo: Make non-static
+    3. Surround with block
+    4. Extract local variable
+    5. Extract interface
+    6. Many-of-one
+    7. Use base type
+    8. Apply interface and move to many
+    9. Extract list of scorers
+    10. Extract apply scorers
 
 ## Smell: bad names
 
-- [ ] Missing/Misleading -> Nonsense
+- [ ] Missing/Misleading -> (Obvious) Nonsense
 
 - [ ] Nonsense -> Honest (but incomplete)
 
@@ -44,53 +72,13 @@ Course Section 1
 - [ ] Does the right thing -> Intent
 
 - [ ] Intent -> Domain Abstraction
-## Smell: Inconsistency
+## Refactoring Combo: Make non-static
 
-- [ ] make consistent
+    1. Introduce unused local instance variable in method
+    2. Introduce parameter
+    3. Refactor -> Make method non-static
 
-  (surfaces duplication)
-
-## Smell: Long Method
-
-- [ ] Identify a paragraph
-- [ ] Extract it
-- [ ] Does the paragraph you extracted make sense?
-
-## Smell: Long Switch
-
-- [ ] Prerequisite: every case is a single call
-- [ ] Convert dispatch to strategy
-  - [ ] `switch`->`if`/`else`
-  - [ ] Remove redundant `else`
-  - [ ] Extract method on condition
-  - [ ] Move condition and action to another type
-  - [ ] Refactoring Combo: Make non-static 
-  - [ ] Add braces around if condition
-  - [ ] Extract local variable of strategy Class instance
-  - [ ] Extract Interface
-  - [ ] Convert first `if` to many-of-one
-  - [ ] Convert next to many
-
-## Smell: Improper class
-
-- [ ] figure out what doesn't belong in the class and move it to another class
-
-## Smell: Duplication
-
-- [ ] Make similar things identical
-- [ ] Extract the duplication
-
-## Smell: Duplication
-
-- [ ] Extract interface
-
-# Refactoring Combo: Make non-static
-
-  1. Introduce unused local instance variable in method
-        2. Introduce parameter
-         3. Make method non-static
-
-# Homework
+## Homework
 
 * Redo today’s coding exercises on your own computer
 
