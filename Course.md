@@ -1,8 +1,8 @@
 ## Refactoring to Cleaner Code
 
 * [ ] Validate environment
-    * [ ] Run the test
-* [ ] NCrunch
+    * [ ] Run the tests (`Ctrl-U, Ctrl-L`)
+* [ ] NCrunch (`Alt-U`)
     * [ ] Enable
     * [ ] Show Risk/Progress window floating
 
@@ -24,7 +24,7 @@ We are looking at large method that we don't understand, and we want to clean up
 3. Evaluate
 4. Commit (or revert)
 
-- [ ] ## Restriction 1: Extract Paragraphs to methods
+- [ ] ## Activity 1: Extract Paragraphs to methods
 
     1. Identify a paragraph
     2. Extract a method
@@ -32,26 +32,26 @@ We are looking at large method that we don't understand, and we want to clean up
     4. Fix or revert and try again
     5. Commit
     
-- [ ] ## Restriction 2: Move methods onto new classes
+- [ ] ## Activity 2: Move methods onto new classes
 
     1. Find a method
     2. Move into a better class
     3. Evaluate signature
     4. Commit
 
-- [ ] ## Restriction 3: Clean up the main method
+- [ ] ## Activity 3: Clean up the main method
 
 	1. Convert `switch` to `if`/`else`
 	2. Remove redundant code
 	3. Extract condition and move onto class
 	4. Commit
 	
- - [ ] ## Restriction 4: Remove duplication
+ - [ ] ## Activity 4: Remove duplication
 
     1. Make similar things identical
-    2. Apply Refactoring Combo: Make non-static
-    3. Surround with block
-    4. Extract local variable
+    2. Surround with blocks
+    4. Apply Refactoring Combo: Make non-static
+    2. Extract local variable
     5. Extract interface
     6. Many-of-one
     7. Use base type
@@ -61,22 +61,32 @@ We are looking at large method that we don't understand, and we want to clean up
 
 ## Smell: bad names
 
-- [ ] Missing/Misleading -> (Obvious) Nonsense
+1. Missing/Misleading -> (Obvious) Nonsense
 
-- [ ] Nonsense -> Honest (but incomplete)
+2. Nonsense -> Honest (but incomplete)
 
-- [ ] Honest -> Honest-and-complete
+3. Honest -> Honest-and-complete
 
-- [ ] Honest-and-Complete -> Does the right thing
+4. Honest-and-Complete -> Does the right thing
 
-- [ ] Does the right thing -> Intent
+5. Does the right thing -> Intent
 
-- [ ] Intent -> Domain Abstraction
+6. Intent -> Domain Abstraction
 ## Refactoring Combo: Make non-static
 
-    1. Introduce unused local instance variable in method
-    2. Introduce parameter
-    3. Refactor -> Make method non-static
+1. Introduce unused local instance variable in method
+2. Introduce parameter
+3. Refactor -> Make method non-static
+4. Commit
+
+## Refactoring Combo: Provable Undo
+
+1. Execute manual, unproven refactoring
+2. Execute automated refactoring to undo #1
+3. Save All
+4. Verify that Git shows no changes
+5. Undo (CTRL-Z) once
+6. Commit
 
 ## Homework
 
