@@ -21,6 +21,7 @@
 - [ ] Sync slides with OneDrive
 - [ ] Open `Course.md` in Typora
 - [ ] Open Solution
+- [ ] Tile Visual Studio with Typora course
 
 # During
 
