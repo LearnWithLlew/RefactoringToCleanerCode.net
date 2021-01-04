@@ -3,5 +3,5 @@
     Pair,
     TwoPair,
     FullHouse,
-    FiveOfAKind,
+    FiveOfAKind
 }
