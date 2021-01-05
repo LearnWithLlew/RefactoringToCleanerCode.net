@@ -26,25 +26,25 @@ We are looking at large method that we don't understand, and we want to clean up
 
 - [ ] ## Activity 1: Extract Paragraphs to methods
 
-    1. Identify a paragraph
-    2. Extract a method
-    3. Evaluate the signature (ignore the body)
+    1. Identify a paragraph (`case`)
+    2. Extract a method to a obvious nonsense name
+    3. Evaluate it at the caller (ignore the body)
     4. Fix or revert and try again
     5. Commit
     
 - [ ] ## Activity 2: Move methods onto new classes
 
-    1. Find a method
+    1. Pick a method
     2. Move into a better class
-    3. Evaluate signature
-    4. Commit
+    3. Evaluate at caller
+    4. Commit (or revert)
 
 - [ ] ## Activity 3: Clean up the main method
 
-	1. Convert `switch` to `if`/`else`
-	2. Remove redundant code
-	3. Extract condition and move onto class
-	4. Commit
+	1. Convert `switch` to `if`/`else`, commit
+	2. Remove redundant `else` in method, commit
+	3. Extract condition, commit
+	4. Move method, commit
 	
  - [ ] ## Activity 4: Remove duplication
 
