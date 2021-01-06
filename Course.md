@@ -27,7 +27,7 @@ We are looking at large method that we don't understand, and we want to clean up
 - [ ] ## Activity 1: Extract Paragraphs to methods
 
     1. Identify a paragraph (`case`)
-    2. Extract a method to a obvious nonsense name
+    2. Extract a method to a Obvious Nonsense name
     3. Evaluate it at the caller (ignore the body)
     4. Fix or revert and try again
     5. Commit
@@ -43,7 +43,7 @@ We are looking at large method that we don't understand, and we want to clean up
 
 	1. Convert `switch` to `if`/`else`, commit
 	2. Remove redundant `else` in method, commit
-	3. Extract condition, commit
+	3. Extract condition to a method with a Nonsense name, commit
 	4. Move method, commit
 	
  - [ ] ## Activity 4: Remove duplication
@@ -81,12 +81,41 @@ We are looking at large method that we don't understand, and we want to clean up
 
 ## Refactoring Combo: Provable Undo
 
-1. Execute manual, unproven refactoring
-2. Execute automated refactoring to undo #1
-3. Save All
-4. Verify that Git shows no changes
-5. Undo (CTRL-Z) once
-6. Commit
+**Insight:** A proven-correct refactoring means that the resulting code is the same as the beginning code. Therefore undoing a proven-correct refactoring is also a proven-correct refactoring.
+
+1. Verify that Git shows no changes
+2. Execute manual, unproven refactoring
+3. Execute automated refactoring to undo #1
+4. Save All
+5. Verify that Git shows no changes
+6. Undo (CTRL-Z) once
+7. Commit
+
+# Refactoring Recipe: many-of-one
+
+> This is not a proven-correct refactoring.
+
+Given:
+
+```c#
+var x = ...;
+// do something with x
+```
+
+Becomes:
+
+```c#
+foreach (var x in new[]{ ... })
+{
+    // do something with x
+}
+```
+
+1. Add curly braces (`{}`) around the body
+2. Prefix with `foreach (`
+3. Replace `=` with `in new []{`
+4. Replace `;` with `})`
+
 
 ## Homework
 
@@ -98,6 +127,7 @@ We are looking at large method that we don't understand, and we want to clean up
     * how often you're able to execute a single refactoring - more is better
     * how many times you are able to pull out a paragraph into a new method
 * Print out this sheet and keep it on your desk. Over the next week as you're doing your normal work:
-  * note when you were able to improve the code with tiny refactorings
-  * note when you found code you wish was better but couldn't improve at this time
+  * note when you were able to improve the code with a single, committed refactoring
+  * note when you extract a paragraph
+  * Make a TODO list of code you wish was better but couldn't improve at this time
 
