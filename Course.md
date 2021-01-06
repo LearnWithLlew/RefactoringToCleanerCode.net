@@ -3,8 +3,8 @@
 * [ ] Validate environment
     * [ ] Run the tests (`Ctrl-U, Ctrl-L`)
 * [ ] NCrunch (`Alt-U`)
-    * [ ] Enable
-    * [ ] Show Risk/Progress window floating
+    * [ ] Enable NCrunch
+    * [ ] Ensure **Risk/Progress** window is open and floating
 
 ## Scenario
 

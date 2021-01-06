@@ -13,6 +13,7 @@
 - [ ] Make a branch
 - [ ] Enable `Show procedure line separators`
 - [ ] Ensure Typora installed
+- [ ] 
 
 # 20 minutes before
 
@@ -21,7 +22,8 @@
 - [ ] Sync slides with OneDrive
 - [ ] Open `Course.md` in Typora
 - [ ] Open Solution
-- [ ] Tile Visual Studio with Typora course
+- [ ] Place MobTime in the corner
+- [ ] Arrange Visual Studio, Typora course.md, MobTime
 
 # During
 
