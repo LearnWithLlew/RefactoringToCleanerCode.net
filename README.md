@@ -1,3 +1,5 @@
+![.NET](https://github.com/LearnWithLlew/RefactoringToCleanerCode.net/workflows/.NET/badge.svg)
+
 # Refactoring to Cleaner Code by Jay Bazuzi and Llewellyn Falco
 
 You can grab the slides here: https://github.com/LearnWithLlew/RefactoringToCleanerCode.Slides
