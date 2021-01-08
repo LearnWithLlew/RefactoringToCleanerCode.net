@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet RefactoringToCleanerCode restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet RefactoringToCleanerCode build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet RefactoringToCleanerCode test --no-build --verbosity normal
