@@ -26,4 +26,9 @@ static internal class TwoPair
 
         return 0;
     }
+
+    public static bool IsConcertPiano2(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.TwoPair;
+    }
 }
