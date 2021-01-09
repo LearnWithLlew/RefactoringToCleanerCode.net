@@ -27,7 +27,7 @@
         }
 
         {
-            FiveOfAKind appleSauce = new FiveOfAKind();
+            INonSenseApple appleSauce = new FiveOfAKind();
             if (appleSauce.Matches(scoringType))
             {
                 return appleSauce.GetScore(die1, die2, die3, die4, die5);
