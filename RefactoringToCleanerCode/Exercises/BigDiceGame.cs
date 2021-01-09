@@ -27,9 +27,10 @@
         }
 
         {
-            if (new FiveOfAKind().Matches(scoringType))
+            var appleSauce = new FiveOfAKind();
+            if (appleSauce.Matches(scoringType))
             {
-                return new FiveOfAKind().GetScore(die1, die2, die3, die4, die5);
+                return appleSauce.GetScore(die1, die2, die3, die4, die5);
             }
         }
 
