@@ -4,7 +4,7 @@
     {
         if (Pair.IsConcertPiano(scoringType))
         {
-            return Pair.Applesauce(die1, die2, die3, die4, die5);
+            return Pair.GetScore(die1, die2, die3, die4, die5);
         }
 
         if (TwoPair.IsConcertPiano2(scoringType))
