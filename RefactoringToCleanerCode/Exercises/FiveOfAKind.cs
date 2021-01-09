@@ -1,4 +1,4 @@
-static internal class ScoreCalculator
+static internal class FiveOfAKind
 {
     public static int AppleSauce4(int die1, int die2, int die3, int die4, int die5)
     {
