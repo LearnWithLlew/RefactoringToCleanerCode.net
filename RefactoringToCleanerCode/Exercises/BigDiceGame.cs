@@ -2,7 +2,7 @@
 {
     public static int GetScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
-        if (Pair.IsConcertPiano(scoringType))
+        if (Pair.Matches(scoringType))
         {
             return Pair.GetScore(die1, die2, die3, die4, die5);
         }
