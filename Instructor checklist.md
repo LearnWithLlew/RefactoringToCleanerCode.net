@@ -13,7 +13,6 @@
 - [ ] Make a branch
 - [ ] Enable `Show procedure line separators`
 - [ ] Ensure Typora installed
-- [ ] 
 
 # 20 minutes before
 
@@ -27,40 +26,14 @@
 
 # During
 
-Introduce ourselves and the course
-Show slides
-Get everyone on Anydesk
-Set up mob rotation
-Refactor
-
-
-1. Extract the first paragraph
-
-   1. Evaluate
-   2. Don't like parameters!
-   3. Revert
-2. Rename `st` -> `scoringType`
-3. Repeat with other parameters
-4. Extract the first paragraph
-
-   1. Evaluate
-5. Repeat with other cases
-6. Move `GetScore()` methods onto classes
-7. `switch`->`if`, remove `else`
-8. Extract Method for condition / rename Applesauce->Honest / move both methods to class
-9. Repeat
-10. Make Non-static
-11. Repeat
-12. Extract interface
-13. Many-of-one
-14. Use base type
-15. Apply interface and move to many
-16. Repeat
-17. Extract list of scorers
-18. Extract apply scorers
-19. Convert to Linq?
-
-
+- [ ] Introduce ourselves and the course
+- [ ] Show slides
+- [ ] Get everyone on Anydesk
+- [ ] Set up mob rotation
+- [ ] Refactor
+- [ ] Homework
+- [ ] Guided reflections
+- [ ] Code Cleaners for Hire
 
 ## Slide decks we might use:
 
