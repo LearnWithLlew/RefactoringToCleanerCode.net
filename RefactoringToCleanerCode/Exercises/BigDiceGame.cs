@@ -3,7 +3,7 @@
     public static int GetScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
         {
-            Pair appleSauce = new Pair();
+            INonSenseApple appleSauce = new Pair();
             if (appleSauce.Matches(scoringType))
             {
                 return appleSauce.GetScore(die1, die2, die3, die4, die5);
