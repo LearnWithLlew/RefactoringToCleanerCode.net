@@ -32,7 +32,8 @@
                 {
                     if (counts2[i1] == 5)
                     {
-                        return 50;
+                        const int bigScore = 50;
+                        return bigScore;
                     }
                 }
 
