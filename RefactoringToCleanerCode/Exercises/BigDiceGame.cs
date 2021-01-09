@@ -3,7 +3,7 @@
     public static int GetScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
         {
-            var appleSauce = new Pair();
+            Pair appleSauce = new Pair();
             if (appleSauce.Matches(scoringType))
             {
                 return appleSauce.GetScore(die1, die2, die3, die4, die5);
@@ -11,7 +11,7 @@
         }
 
         {
-            var appleSauce = new TwoPair();
+            TwoPair appleSauce = new TwoPair();
             if (appleSauce.Matches(scoringType))
             {
                 return appleSauce.GetScore(die1, die2, die3, die4, die5);
@@ -19,7 +19,7 @@
         }
 
         {
-            var appleSauce = new FullHouse();
+            FullHouse appleSauce = new FullHouse();
             if (appleSauce.Matches(scoringType))
             {
                 return appleSauce.GetScore(die1, die2, die3, die4, die5);
@@ -27,7 +27,7 @@
         }
 
         {
-            var appleSauce = new FiveOfAKind();
+            FiveOfAKind appleSauce = new FiveOfAKind();
             if (appleSauce.Matches(scoringType))
             {
                 return appleSauce.GetScore(die1, die2, die3, die4, die5);
