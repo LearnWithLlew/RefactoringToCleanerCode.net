@@ -6,15 +6,18 @@
         {
             return Pair.Applesauce(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.TwoPair)
+
+        if (st == ScoringType.TwoPair)
         {
             return TwoPair.AppleSauce2(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.FullHouse)
+
+        if (st == ScoringType.FullHouse)
         {
             return FullHouse.AppleSauce3(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.FiveOfAKind)
+
+        if (st == ScoringType.FiveOfAKind)
         {
             return FiveOfAKind.AppleSauce4(die1, die2, die3, die4, die5);
         }
