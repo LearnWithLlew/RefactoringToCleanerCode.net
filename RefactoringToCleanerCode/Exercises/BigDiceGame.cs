@@ -11,9 +11,10 @@
         }
 
         {
-            if (new TwoPair().Matches(scoringType))
+            var appleSauce = new TwoPair();
+            if (appleSauce.Matches(scoringType))
             {
-                return new TwoPair().GetScore(die1, die2, die3, die4, die5);
+                return appleSauce.GetScore(die1, die2, die3, die4, die5);
             }
         }
 
