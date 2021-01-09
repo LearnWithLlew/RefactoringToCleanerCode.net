@@ -1,10 +1,10 @@
-internal interface INonSenseApple
+internal interface ICategory
 {
     int GetScore(int die1, int die2, int die3, int die4, int die5);
     bool Matches(ScoringType scoringType);
 }
 
-internal class Pair : INonSenseApple
+internal class Pair : ICategory
 {
     public int GetScore(int die1, int die2, int die3, int die4, int die5)
     {
