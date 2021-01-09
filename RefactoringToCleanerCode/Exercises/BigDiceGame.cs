@@ -9,7 +9,7 @@
 
         if (TwoPair.IsConcertPiano2(scoringType))
         {
-            return TwoPair.AppleSauce2(die1, die2, die3, die4, die5);
+            return TwoPair.GetScore(die1, die2, die3, die4, die5);
         }
 
         if (FullHouse.IsConcertPiano3(scoringType))
