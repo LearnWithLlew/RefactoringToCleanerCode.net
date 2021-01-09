@@ -19,7 +19,7 @@
         }
 
         {
-            FullHouse appleSauce = new FullHouse();
+            INonSenseApple appleSauce = new FullHouse();
             if (appleSauce.Matches(scoringType))
             {
                 return appleSauce.GetScore(die1, die2, die3, die4, die5);
