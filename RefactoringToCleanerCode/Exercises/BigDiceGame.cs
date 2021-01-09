@@ -23,9 +23,11 @@
             }
         }
 
-        if (new FiveOfAKind().Matches(scoringType))
         {
-            return new FiveOfAKind().GetScore(die1, die2, die3, die4, die5);
+            if (new FiveOfAKind().Matches(scoringType))
+            {
+                return new FiveOfAKind().GetScore(die1, die2, die3, die4, die5);
+            }
         }
 
         return 0;
