@@ -20,4 +20,9 @@ static internal class FiveOfAKind
 
         return 0;
     }
+
+    public static bool IsConcertPiano4(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.FiveOfAKind;
+    }
 }
