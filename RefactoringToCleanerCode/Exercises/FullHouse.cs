@@ -43,7 +43,7 @@ static internal class FullHouse
         return 0;
     }
 
-    public static bool IsConcertPiano3(ScoringType scoringType)
+    public static bool Matches(ScoringType scoringType)
     {
         return scoringType == ScoringType.FullHouse;
     }
