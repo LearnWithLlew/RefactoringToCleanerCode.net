@@ -14,7 +14,7 @@
 
         if (FullHouse.IsConcertPiano3(scoringType))
         {
-            return FullHouse.AppleSauce3(die1, die2, die3, die4, die5);
+            return FullHouse.GetScore(die1, die2, die3, die4, die5);
         }
 
         if (FiveOfAKind.IsConcertPiano4(scoringType))
