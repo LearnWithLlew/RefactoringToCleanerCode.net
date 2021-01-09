@@ -1,32 +1,27 @@
 ﻿public static class BigDiceGame
 {
-    public static int GetScore(ScoringType st, int die1, int die2, int die3, int die4, int die5)
+    public static int GetScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
-        if (IsConcertPiano(st))
+        if (scoringType == ScoringType.Pair)
         {
             return Pair.Applesauce(die1, die2, die3, die4, die5);
         }
 
-        if (st == ScoringType.TwoPair)
+        if (scoringType == ScoringType.TwoPair)
         {
             return TwoPair.AppleSauce2(die1, die2, die3, die4, die5);
         }
 
-        if (st == ScoringType.FullHouse)
+        if (scoringType == ScoringType.FullHouse)
         {
             return FullHouse.AppleSauce3(die1, die2, die3, die4, die5);
         }
 
-        if (st == ScoringType.FiveOfAKind)
+        if (scoringType == ScoringType.FiveOfAKind)
         {
             return FiveOfAKind.AppleSauce4(die1, die2, die3, die4, die5);
         }
 
         return 0;
-    }
-
-    private static bool IsConcertPiano(ScoringType st)
-    {
-        return st == ScoringType.Pair;
     }
 }
