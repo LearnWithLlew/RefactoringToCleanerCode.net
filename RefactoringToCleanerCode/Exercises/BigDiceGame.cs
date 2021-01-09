@@ -2,7 +2,7 @@
 {
     public static int GetScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
-        if (IsConcertPiano(scoringType))
+        if (Pair.IsConcertPiano(scoringType))
         {
             return Pair.Applesauce(die1, die2, die3, die4, die5);
         }
@@ -38,10 +38,5 @@
     private static bool IsConcertPiano2(ScoringType scoringType)
     {
         return scoringType == ScoringType.TwoPair;
-    }
-
-    private static bool IsConcertPiano(ScoringType scoringType)
-    {
-        return scoringType == ScoringType.Pair;
     }
 }

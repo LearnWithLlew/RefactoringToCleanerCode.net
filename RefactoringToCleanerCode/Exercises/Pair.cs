@@ -20,4 +20,9 @@ static internal class Pair
 
         return 0;
     }
+
+    public static bool IsConcertPiano(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.Pair;
+    }
 }
