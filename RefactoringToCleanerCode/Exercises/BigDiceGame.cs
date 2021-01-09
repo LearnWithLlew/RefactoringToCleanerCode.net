@@ -12,7 +12,7 @@
             return TwoPair.AppleSauce2(die1, die2, die3, die4, die5);
         }
 
-        if (scoringType == ScoringType.FullHouse)
+        if (IsConcertPiano3(scoringType))
         {
             return FullHouse.AppleSauce3(die1, die2, die3, die4, die5);
         }
@@ -23,6 +23,11 @@
         }
 
         return 0;
+    }
+
+    private static bool IsConcertPiano3(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.FullHouse;
     }
 
     private static bool IsConcertPiano2(ScoringType scoringType)
