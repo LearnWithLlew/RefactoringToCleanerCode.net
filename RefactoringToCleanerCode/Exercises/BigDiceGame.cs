@@ -7,7 +7,7 @@
             return Pair.Applesauce(die1, die2, die3, die4, die5);
         }
 
-        if (scoringType == ScoringType.TwoPair)
+        if (IsConcertPiano2(scoringType))
         {
             return TwoPair.AppleSauce2(die1, die2, die3, die4, die5);
         }
@@ -23,6 +23,11 @@
         }
 
         return 0;
+    }
+
+    private static bool IsConcertPiano2(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.TwoPair;
     }
 
     private static bool IsConcertPiano(ScoringType scoringType)
