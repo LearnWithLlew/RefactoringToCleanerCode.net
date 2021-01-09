@@ -1,6 +1,6 @@
 internal class Pair
 {
-    public static int GetScore(int die1, int die2, int die3, int die4, int die5)
+    public int GetScore(int die1, int die2, int die3, int die4, int die5)
     {
         const int value = 2;
         int[] tallies1;

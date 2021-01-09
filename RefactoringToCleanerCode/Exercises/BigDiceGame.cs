@@ -4,7 +4,7 @@
     {
         if (new Pair().Matches(scoringType))
         {
-            return Pair.GetScore(die1, die2, die3, die4, die5);
+            return new Pair().GetScore(die1, die2, die3, die4, die5);
         }
 
         if (new TwoPair().Matches(scoringType))
