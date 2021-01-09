@@ -19,9 +19,10 @@
         }
 
         {
-            if (new FullHouse().Matches(scoringType))
+            var appleSauce = new FullHouse();
+            if (appleSauce.Matches(scoringType))
             {
-                return new FullHouse().GetScore(die1, die2, die3, die4, die5);
+                return appleSauce.GetScore(die1, die2, die3, die4, die5);
             }
         }
 
