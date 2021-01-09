@@ -21,7 +21,7 @@ internal class FiveOfAKind
         return 0;
     }
 
-    public static bool Matches(ScoringType scoringType)
+    public bool Matches(ScoringType scoringType)
     {
         return scoringType == ScoringType.FiveOfAKind;
     }
