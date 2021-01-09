@@ -3,10 +3,12 @@
     public static int GetScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
         {
-            INonSenseApple appleSauce = new Pair();
-            if (appleSauce.Matches(scoringType))
+            foreach (INonSenseApple appleSauce in new []{ new Pair()})
             {
-                return appleSauce.GetScore(die1, die2, die3, die4, die5);
+                if (appleSauce.Matches(scoringType))
+                {
+                    return appleSauce.GetScore(die1, die2, die3, die4, die5);
+                }
             }
         }
 
