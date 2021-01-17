@@ -8,9 +8,9 @@ iwr -useb https://raw.githubusercontent.com/JayBazuzi/machine-setup/main/visual-
 
 cinst typora
 
-# Install ReSharper_SilentCleanupOnSavePreview extension to Visual Studio
-iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Grahamvs/vsextensions/ReSharperSilentCleanupOnSave/0.1/vspackage -O ReSharper_SilentCleanupOnSavePreview.vsix
-& "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\VSIXInstaller.exe" .\ReSharper_SilentCleanupOnSavePreview.vsix  /q
+# Don't Install ReSharper_SilentCleanupOnSavePreview extension to Visual Studio - it interferes with undo
+# iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Grahamvs/vsextensions/ReSharperSilentCleanupOnSave/0.1/vspackage -O ReSharper_SilentCleanupOnSavePreview.vsix
+# & "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\VSIXInstaller.exe" .\ReSharper_SilentCleanupOnSavePreview.vsix  /q
 
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/RefactoringToCleanerCode.slides.git C:\Source\RefactoringToCleanerCode.slides
 github C:\Source\RefactoringToCleanerCode.slides
