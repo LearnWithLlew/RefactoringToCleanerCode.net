@@ -13,7 +13,7 @@ namespace Exercises.Tests
         {
             var dice = new[] {1, 2, 3, 4, 5, 6};
             var scoringTypes = Utilities.GetEnumValues<ScoringType>().Append((ScoringType) (-1));
-            Utilities.VerifyAllCombinations(BigDiceGame.GetScore, scoringTypes, dice, dice, dice, dice, dice);
+            Utilities.VerifyAllCombinations(BigDiceGame.CalculateScore, scoringTypes, dice, dice, dice, dice, dice);
         }
     }
 }
