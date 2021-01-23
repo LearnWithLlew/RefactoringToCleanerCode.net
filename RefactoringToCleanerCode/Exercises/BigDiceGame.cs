@@ -7,7 +7,7 @@
             return CalculatePairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
-        if (CalculateTwoPairScore.Nonsense2(scoringType))
+        if (CalculateTwoPairScore.ShouldCalculate(scoringType))
         {
             return CalculateTwoPairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
