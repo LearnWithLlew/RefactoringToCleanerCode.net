@@ -1,4 +1,4 @@
-internal class CalculateFiveOfAKindScore
+internal class CalculateFiveOfAKindScore:ICalculator
 {
     public int Calculate(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
