@@ -1,23 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 public static class BigDiceGame
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
-        foreach (ICalculator calculator in GetCalculators())
-        {
-            if (calculator.ShouldCalculate(scoringType))
-            {
-                return calculator.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
-            }
-        }
-
-
-
-
-
-
-        return 0;
+        return (from calculator in GetCalculators() where calculator.ShouldCalculate(scoringType) select calculator.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive)).FirstOrDefault();
     }
 
     private static ICalculator[] GetCalculators()
