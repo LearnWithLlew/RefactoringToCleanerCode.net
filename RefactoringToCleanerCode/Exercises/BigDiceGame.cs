@@ -19,9 +19,10 @@
         }
 
         {
-            if (new CalculateFullHouseScore().ShouldCalculate(scoringType))
+            var calculator = new CalculateFullHouseScore();
+            if (calculator.ShouldCalculate(scoringType))
             {
-                return new CalculateFullHouseScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                return calculator.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
         {
