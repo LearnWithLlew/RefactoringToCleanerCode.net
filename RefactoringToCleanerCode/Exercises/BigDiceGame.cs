@@ -4,7 +4,7 @@
     {
         if (CalculatePairScore.ShouldCalculate(scoringType))
         {
-            return CalculatePairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            return new CalculatePairScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
         if (CalculateTwoPairScore.ShouldCalculate(scoringType))
