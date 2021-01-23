@@ -20,4 +20,9 @@ static internal class CalculatePairScore
 
         return 0;
     }
+
+    public static bool Nonsense(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.Pair;
+    }
 }
