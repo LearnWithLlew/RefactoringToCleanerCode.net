@@ -16,7 +16,7 @@
         {
             return new CalculateFullHouseScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        if (CalculateFiveOfAKindScore.ShouldCalculate(scoringType))
+        if (new CalculateFiveOfAKindScore().ShouldCalculate(scoringType))
         {
             return CalculateFiveOfAKindScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
