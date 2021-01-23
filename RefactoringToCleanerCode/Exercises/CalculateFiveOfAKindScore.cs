@@ -1,6 +1,6 @@
 static internal class CalculateFiveOfAKindScore
 {
-    public static int Nonsense4(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
+    public static int Calculate(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
         int[] dice1 = {dieOne, dieTwo, dieThree, dieFour, dieFive};
         var counts2 = new int[6];

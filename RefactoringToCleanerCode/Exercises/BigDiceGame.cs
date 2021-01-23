@@ -21,7 +21,7 @@
 
             case ScoringType.FiveOfAKind:
             {
-                return CalculateFiveOfAKindScore.Nonsense4(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                return CalculateFiveOfAKindScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
 
