@@ -1,6 +1,6 @@
 internal class CalculateFullHouseScore
 {
-    public static int Calculate(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
+    public int Calculate(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
         int[] tallies;
         var _2 = false;
