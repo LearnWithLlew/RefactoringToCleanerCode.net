@@ -11,9 +11,10 @@
         }
 
         {
-            if (new CalculateTwoPairScore().ShouldCalculate(scoringType))
+            var calculator = new CalculateTwoPairScore();
+            if (calculator.ShouldCalculate(scoringType))
             {
-                return new CalculateTwoPairScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                return calculator.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
 
