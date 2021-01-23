@@ -16,9 +16,11 @@
             }
         }
 
-        if (new CalculateFullHouseScore().ShouldCalculate(scoringType))
         {
-            return new CalculateFullHouseScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            if (new CalculateFullHouseScore().ShouldCalculate(scoringType))
+            {
+                return new CalculateFullHouseScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            }
         }
         if (new CalculateFiveOfAKindScore().ShouldCalculate(scoringType))
         {
