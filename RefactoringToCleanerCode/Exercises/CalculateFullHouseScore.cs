@@ -1,4 +1,4 @@
-internal class CalculateFullHouseScore
+internal class CalculateFullHouseScore : ICalculator
 {
     public int Calculate(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
