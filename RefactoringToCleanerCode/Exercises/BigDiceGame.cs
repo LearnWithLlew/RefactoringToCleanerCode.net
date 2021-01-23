@@ -9,7 +9,7 @@
 
         if (new CalculateTwoPairScore().ShouldCalculate(scoringType))
         {
-            return CalculateTwoPairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            return new CalculateTwoPairScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
         if (CalculateFullHouseScore.ShouldCalculate(scoringType))
