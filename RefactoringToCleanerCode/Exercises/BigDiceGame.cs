@@ -1,22 +1,22 @@
 ﻿public static class BigDiceGame
 {
-    public static int CalculateScore(ScoringType st, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
+    public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
-        if (st == ScoringType.Pair)
+        if (scoringType == ScoringType.Pair)
         {
             return CalculatePairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
-        if (st == ScoringType.TwoPair)
+        if (scoringType == ScoringType.TwoPair)
         {
             return CalculateTwoPairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
-        if (st == ScoringType.FullHouse)
+        if (scoringType == ScoringType.FullHouse)
         {
             return CalculateFullHouseScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        if (st == ScoringType.FiveOfAKind)
+        if (scoringType == ScoringType.FiveOfAKind)
         {
             return CalculateFiveOfAKindScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
