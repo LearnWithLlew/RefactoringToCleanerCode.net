@@ -4,11 +4,7 @@ public static class BigDiceGame
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
-        foreach (ICalculator calculator in new ICalculator[]
-        {
-            new CalculatePairScore(), new CalculateTwoPairScore(), new CalculateFullHouseScore(),
-            new CalculateFiveOfAKindScore()
-        })
+        foreach (ICalculator calculator in GetCalculators())
         {
             if (calculator.ShouldCalculate(scoringType))
             {
@@ -22,5 +18,14 @@ public static class BigDiceGame
 
 
         return 0;
+    }
+
+    private static ICalculator[] GetCalculators()
+    {
+        return new ICalculator[]
+        {
+            new CalculatePairScore(), new CalculateTwoPairScore(), new CalculateFullHouseScore(),
+            new CalculateFiveOfAKindScore()
+        };
     }
 }
