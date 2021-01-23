@@ -35,16 +35,6 @@
 - [ ] Guided reflections
 - [ ] Code Cleaners for Hire
 
-## Slide decks we might use:
-
-    Sparrows
-    Long methods
-    Paragraphs
-    Paragraph patterns
-    Naming-as-as-process
-    Provable undo
-    Arlo's Git Notation
-
 # 1 hour after
 
 - [ ] Send slides and repo and survey and Code Cleaners doc
@@ -52,5 +42,6 @@
 # 1 week after
 
 - [ ] Followup email
-- [ ] 
+
+  
 
