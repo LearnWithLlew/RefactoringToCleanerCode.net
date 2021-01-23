@@ -43,7 +43,7 @@ static internal class CalculateFullHouseScore
         return 0;
     }
 
-    public static bool Nonsense3(ScoringType scoringType)
+    public static bool ShouldCalculate(ScoringType scoringType)
     {
         return scoringType == ScoringType.FullHouse;
     }
