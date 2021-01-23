@@ -1,4 +1,4 @@
-static internal class NonsenseClass
+static internal class CalculatePairScore
 {
     public static int Nonsense(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
