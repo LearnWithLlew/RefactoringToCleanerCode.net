@@ -2,7 +2,7 @@
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
-        if (scoringType == ScoringType.Pair)
+        if (Nonsense(scoringType))
         {
             return CalculatePairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
@@ -22,5 +22,10 @@
         }
 
         return 0;
+    }
+
+    private static bool Nonsense(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.Pair;
     }
 }
