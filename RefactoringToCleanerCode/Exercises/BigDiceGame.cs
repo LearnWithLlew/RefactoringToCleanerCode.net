@@ -1,6 +1,6 @@
 ﻿public static class BigDiceGame
 {
-    public static int CalculateScore(ScoringType st, int die1, int dieTwo, int d3, int dice4, int fifthDie)
+    public static int CalculateScore(ScoringType st, int dieOne, int dieTwo, int d3, int dice4, int fifthDie)
     {
         const int bigScore = 50;
         switch (st)
@@ -10,7 +10,7 @@
                 const int value = 2;
                 int[] tallies1;
                 tallies1 = new int[6];
-                tallies1[die1 - 1]++;
+                tallies1[dieOne - 1]++;
                 tallies1[dieTwo - 1]++;
                 tallies1[d3 - 1]++;
                 tallies1[dice4 - 1]++;
@@ -29,7 +29,7 @@
             case ScoringType.TwoPair:
             {
                 var counts1 = new int[6];
-                counts1[die1 - 1]++;
+                counts1[dieOne - 1]++;
                 counts1[dieTwo - 1]++;
                 counts1[d3 - 1]++;
                 counts1[dice4 - 1]++;
@@ -64,7 +64,7 @@
 
 
                 tallies = new int[6];
-                tallies[die1 - 1] += 1;
+                tallies[dieOne - 1] += 1;
                 tallies[dieTwo - 1] += 1;
                 tallies[d3 - 1] += 1;
                 tallies[dice4 - 1] += 1;
@@ -98,7 +98,7 @@
 
             case ScoringType.FiveOfAKind:
             {
-                int[] dice1 = {die1, dieTwo, d3, dice4, fifthDie};
+                int[] dice1 = {dieOne, dieTwo, d3, dice4, fifthDie};
                 var counts2 = new int[6];
                 foreach (var die in dice1)
                 {

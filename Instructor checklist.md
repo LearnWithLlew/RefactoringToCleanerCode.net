@@ -8,21 +8,21 @@
 
 # 1 day before
 
-- [ ] Open Solution, build, run tests, turn off NCrunch
-- [ ] Get slides onto machine via Office 365
-- [ ] Make a branch
-- [ ] Enable `Show procedure line separators`
-- [ ] Ensure Typora installed
+- [x] Open Solution, build, run tests, turn off NCrunch
+- [x] Get slides onto machine via Office 365
+- [x] Make a branch
+- [x] Enable `Show procedure line separators`
+- [x] Ensure Typora installed
 
 # 20 minutes before
 
-- [ ] Launch Zoom
-- [ ] Launch AnyDesk
+- [x] Launch Zoom
+- [x] Launch AnyDesk
 - [ ] Sync slides with OneDrive
-- [ ] Open `Course.md` in Typora
-- [ ] Open Solution
-- [ ] Place MobTime in the corner
-- [ ] Arrange Visual Studio, Typora course.md, MobTime
+- [x] Open `Course.md` in Typora
+- [x] Open Solution
+- [x] Place MobTime in the corner
+- [x] Arrange Visual Studio, Typora course.md, MobTime
 
 # During
 
