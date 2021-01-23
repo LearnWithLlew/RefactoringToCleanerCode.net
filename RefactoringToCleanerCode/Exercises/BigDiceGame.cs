@@ -4,9 +4,11 @@
     {
         {
             ICalculator calculator = new CalculatePairScore();
-            if (calculator.ShouldCalculate(scoringType))
             {
-                return calculator.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                if (calculator.ShouldCalculate(scoringType))
+                {
+                    return calculator.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                }
             }
         }
 
