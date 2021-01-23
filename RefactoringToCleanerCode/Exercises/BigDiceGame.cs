@@ -16,16 +16,11 @@
         {
             return CalculateFullHouseScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        if (Nonsense4(scoringType))
+        if (CalculateFiveOfAKindScore.Nonsense4(scoringType))
         {
             return CalculateFiveOfAKindScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
         return 0;
-    }
-
-    private static bool Nonsense4(ScoringType scoringType)
-    {
-        return scoringType == ScoringType.FiveOfAKind;
     }
 }
