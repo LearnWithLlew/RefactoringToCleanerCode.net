@@ -1,9 +1,11 @@
-﻿public static class BigDiceGame
+﻿using System.Collections.Generic;
+
+public static class BigDiceGame
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
         {
-            ICalculator calculator = new CalculatePairScore();
+            foreach (ICalculator calculator in new ICalculator[]{ new CalculatePairScore()})
             {
                 if (calculator.ShouldCalculate(scoringType))
                 {
