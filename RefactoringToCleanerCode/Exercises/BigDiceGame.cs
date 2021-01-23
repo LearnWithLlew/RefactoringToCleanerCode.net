@@ -9,9 +9,11 @@
             }
         }
 
-        if (new CalculateTwoPairScore().ShouldCalculate(scoringType))
         {
-            return new CalculateTwoPairScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            if (new CalculateTwoPairScore().ShouldCalculate(scoringType))
+            {
+                return new CalculateTwoPairScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            }
         }
 
         if (new CalculateFullHouseScore().ShouldCalculate(scoringType))
