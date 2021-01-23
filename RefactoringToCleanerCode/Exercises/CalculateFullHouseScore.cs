@@ -1,4 +1,4 @@
-static internal class CalculateFullHouseScore
+internal class CalculateFullHouseScore
 {
     public static int Calculate(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
