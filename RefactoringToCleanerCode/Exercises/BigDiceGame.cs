@@ -18,7 +18,7 @@
         }
         if (new CalculateFiveOfAKindScore().ShouldCalculate(scoringType))
         {
-            return CalculateFiveOfAKindScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            return new CalculateFiveOfAKindScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
         return 0;
