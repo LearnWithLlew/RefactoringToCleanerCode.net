@@ -2,7 +2,7 @@
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
-        if (CalculatePairScore.ShouldCalculate(scoringType))
+        if (new CalculatePairScore().ShouldCalculate(scoringType))
         {
             return new CalculatePairScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
