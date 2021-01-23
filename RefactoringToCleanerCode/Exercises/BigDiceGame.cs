@@ -22,9 +22,11 @@
                 return new CalculateFullHouseScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
-        if (new CalculateFiveOfAKindScore().ShouldCalculate(scoringType))
         {
-            return new CalculateFiveOfAKindScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            if (new CalculateFiveOfAKindScore().ShouldCalculate(scoringType))
+            {
+                return new CalculateFiveOfAKindScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            }
         }
 
         return 0;
