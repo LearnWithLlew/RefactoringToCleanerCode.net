@@ -11,11 +11,12 @@
         {
             return CalculateTwoPairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        else if (st == ScoringType.FullHouse)
+
+        if (st == ScoringType.FullHouse)
         {
             return CalculateFullHouseScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        else if (st == ScoringType.FiveOfAKind)
+        if (st == ScoringType.FiveOfAKind)
         {
             return CalculateFiveOfAKindScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
