@@ -1,4 +1,4 @@
-static internal class CalculateTwoPairScore
+internal class CalculateTwoPairScore
 {
     public static int Calculate(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
