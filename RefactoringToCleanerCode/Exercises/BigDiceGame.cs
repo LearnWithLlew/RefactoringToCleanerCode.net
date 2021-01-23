@@ -26,9 +26,10 @@
             }
         }
         {
-            if (new CalculateFiveOfAKindScore().ShouldCalculate(scoringType))
+            var calculator = new CalculateFiveOfAKindScore();
+            if (calculator.ShouldCalculate(scoringType))
             {
-                return new CalculateFiveOfAKindScore().Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                return calculator.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
 
