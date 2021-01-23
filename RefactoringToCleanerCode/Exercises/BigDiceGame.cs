@@ -11,7 +11,7 @@
 
             case ScoringType.TwoPair:
             {
-                return CalculateTwoPairScore.Nonsense2(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                return CalculateTwoPairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
 
             case ScoringType.FullHouse:
