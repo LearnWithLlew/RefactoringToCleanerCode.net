@@ -27,7 +27,7 @@ internal class CalculateTwoPairScore
         return 0;
     }
 
-    public static bool ShouldCalculate(ScoringType scoringType)
+    public bool ShouldCalculate(ScoringType scoringType)
     {
         return scoringType == ScoringType.TwoPair;
     }
