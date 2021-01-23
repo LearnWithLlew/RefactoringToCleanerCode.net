@@ -6,7 +6,7 @@
         {
             case ScoringType.Pair:
             {
-                return CalculatePairScore.Nonsense(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                return CalculatePairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
 
             case ScoringType.TwoPair:
