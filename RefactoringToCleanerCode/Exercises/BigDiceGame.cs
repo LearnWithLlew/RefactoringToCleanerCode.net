@@ -6,7 +6,8 @@
         {
             return CalculatePairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        else if (st == ScoringType.TwoPair)
+
+        if (st == ScoringType.TwoPair)
         {
             return CalculateTwoPairScore.Calculate(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
