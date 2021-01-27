@@ -1,6 +1,19 @@
 # 1 week before
 
 - [ ] Set up machine
+	- [ ] Customize toolbar with Refactor This button
+		```
+		Tools->Customize
+		On toolbars tab:
+			New
+			Name = Refactoring to Cleanr Code
+		On commands tab
+			Toolbar = Refactoring to Cleaner Code
+			Add Command
+			Categories = Extensions
+			Select Resharper_RefactorThis
+		Drag new toolbar to the right
+		```
 - [ ] Schedule Zoom meeting
 - [ ] Send email to attendees
   - [ ] With Zoom
