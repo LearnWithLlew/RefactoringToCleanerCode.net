@@ -12,12 +12,22 @@ cinst typora
 # iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Grahamvs/vsextensions/ReSharperSilentCleanupOnSave/0.1/vspackage -O ReSharper_SilentCleanupOnSavePreview.vsix
 # & "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\VSIXInstaller.exe" .\ReSharper_SilentCleanupOnSavePreview.vsix  /q
 
-& "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/RefactoringToCleanerCode.slides.git C:\Source\RefactoringToCleanerCode.slides
-github C:\Source\RefactoringToCleanerCode.slides
+pushd C:\Source\
 
-& "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/RefactoringToCleanerCode.net.git C:\Source\RefactoringToCleanerCode.net
-github C:\Source\RefactoringToCleanerCode.net
+& "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/RefactoringToCleanerCode.slides.git
+pushd RefactoringToCleanerCode.Slides\
+github .
+Expand-Archive fonts\playfair-display.zip fonts\install-me
+Expand-Archive fonts\pt-serif.zip fonts\install-me
+Invoke-Item fonts\install-me
+popd
 
-Expand-Archive C:\Source\RefactoringToCleanerCode.Slides\fonts\playfair-display.zip C:\Source\RefactoringToCleanerCode.Slides\fonts\
-Expand-Archive C:\Source\RefactoringToCleanerCode.Slides\fonts\pt-serif.zip
-Invoke-Item C:\Source\RefactoringToCleanerCode.Slides\fonts\
+
+& "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/RefactoringToCleanerCode.net.git
+pushd RefactoringToCleanerCode.net
+github .
+& "C:\Program Files\dotnet\dotnet.exe" test RefactoringToCleanerCode\
+git push
+popd
+
+popd
