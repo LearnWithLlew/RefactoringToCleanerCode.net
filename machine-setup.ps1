@@ -27,6 +27,7 @@ popd
 pushd RefactoringToCleanerCode.net
 github .
 & "C:\Program Files\dotnet\dotnet.exe" test RefactoringToCleanerCode\
+& "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe" RefactoringToCleanerCode\RefactoringToCleanerCode.sln
 git push
 popd
 
