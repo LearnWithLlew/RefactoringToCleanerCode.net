@@ -16,7 +16,7 @@ We are looking at large method that we don't understand, and we want to clean up
 
 - Automated refactorings "only" 
 - Commit after each refactoring
-- Every commit prefixed with `r -    `
+- Every refactoring commit prefixed with `r -    `
 - Rotate typist on commit
 
 ## Improvement Loop
