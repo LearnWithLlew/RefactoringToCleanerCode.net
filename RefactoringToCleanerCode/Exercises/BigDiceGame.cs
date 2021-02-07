@@ -15,7 +15,7 @@
         {
             return DiceFullHouseScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        if (DiceFiveOfAKindScoreCalculator.IsNonsenseNameFour(scoringType))
+        if (DiceFiveOfAKindScoreCalculator.IsScorable(scoringType))
         {
             return DiceFiveOfAKindScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
