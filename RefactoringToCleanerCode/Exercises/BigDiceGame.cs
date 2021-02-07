@@ -7,7 +7,7 @@
             return new DicePairScoreCalculator().CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
-        if (DiceTwoPairScoreCalculator.IsScorable(scoringType))
+        if (new DiceTwoPairScoreCalculator().IsScorable(scoringType))
         {
             return DiceTwoPairScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
