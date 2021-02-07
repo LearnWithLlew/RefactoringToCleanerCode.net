@@ -20,4 +20,9 @@ static internal class DicePairScoreCalculator
 
         return 0;
     }
+
+    public static bool IsNonsenseName(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.Pair;
+    }
 }

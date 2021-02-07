@@ -2,7 +2,7 @@
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
-        if (IsNonsenseName(scoringType))
+        if (DicePairScoreCalculator.IsNonsenseName(scoringType))
         {
             return DicePairScoreCalculator.ObviousNonsense(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
@@ -21,10 +21,5 @@
         }
 
         return 0;
-    }
-
-    private static bool IsNonsenseName(ScoringType scoringType)
-    {
-        return scoringType == ScoringType.Pair;
     }
 }
