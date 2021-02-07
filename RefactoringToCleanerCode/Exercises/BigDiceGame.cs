@@ -2,7 +2,8 @@
 
 public static class BigDiceGame
 {
-    public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
+    public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour,
+        int dieFive)
     {
         return GetScoringTypes()
             .Where(scorer => scorer.IsScorable(scoringType))
@@ -14,7 +15,9 @@ public static class BigDiceGame
     {
         return new IScorer[]
         {
-            new DicePairScoreCalculator(), new DiceTwoPairScoreCalculator(), new DiceFullHouseScoreCalculator(),
+            new DicePairScoreCalculator(), 
+            new DiceTwoPairScoreCalculator(),
+            new DiceFullHouseScoreCalculator(),
             new DiceFiveOfAKindScoreCalculator()
         };
     }
