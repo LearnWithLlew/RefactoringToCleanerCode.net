@@ -1,6 +1,6 @@
 ﻿public static class BigDiceGame
 {
-    public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dice4, int fifthDie)
+    public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int fifthDie)
     {
         const int bigScore = 50;
         switch (scoringType)
@@ -13,7 +13,7 @@
                 tallies1[dieOne - 1]++;
                 tallies1[dieTwo - 1]++;
                 tallies1[dieThree - 1]++;
-                tallies1[dice4 - 1]++;
+                tallies1[dieFour - 1]++;
                 tallies1[fifthDie - 1]++;
                 for (var i = 6 - 1; i >= 0; i--)
                 {
@@ -32,7 +32,7 @@
                 counts1[dieOne - 1]++;
                 counts1[dieTwo - 1]++;
                 counts1[dieThree - 1]++;
-                counts1[dice4 - 1]++;
+                counts1[dieFour - 1]++;
                 counts1[fifthDie - 1]++;
                 var n = 0;
                 var score = 0;
@@ -67,7 +67,7 @@
                 tallies[dieOne - 1] += 1;
                 tallies[dieTwo - 1] += 1;
                 tallies[dieThree - 1] += 1;
-                tallies[dice4 - 1] += 1;
+                tallies[dieFour - 1] += 1;
                 tallies[fifthDie - 1] += 1;
 
                 for (i = 0; i != 6; i += 1)
@@ -98,7 +98,7 @@
 
             case ScoringType.FiveOfAKind:
             {
-                int[] dice1 = {dieOne, dieTwo, dieThree, dice4, fifthDie};
+                int[] dice1 = {dieOne, dieTwo, dieThree, dieFour, fifthDie};
                 var counts2 = new int[6];
                 foreach (var die in dice1)
                 {
