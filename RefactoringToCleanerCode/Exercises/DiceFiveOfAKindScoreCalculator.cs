@@ -1,4 +1,4 @@
-internal class DiceFiveOfAKindScoreCalculator
+internal class DiceFiveOfAKindScoreCalculator : IScorer
 {
     public int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
