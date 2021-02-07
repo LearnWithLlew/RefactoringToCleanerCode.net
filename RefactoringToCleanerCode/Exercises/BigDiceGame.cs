@@ -3,7 +3,7 @@
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
         {
-            foreach (IScorer scorer in new[]{ new DicePairScoreCalculator()})
+            foreach (IScorer scorer in new IScorer[]{ new DicePairScoreCalculator()})
             {
                 if (scorer.IsScorable(scoringType))
                 {
