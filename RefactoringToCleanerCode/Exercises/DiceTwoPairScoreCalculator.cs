@@ -26,4 +26,9 @@ static internal class DiceTwoPairScoreCalculator
 
         return 0;
     }
+
+    public static bool IsNonsenseNameTwo(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.TwoPair;
+    }
 }

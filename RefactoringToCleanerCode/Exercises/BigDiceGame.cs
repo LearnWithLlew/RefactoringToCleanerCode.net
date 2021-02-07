@@ -7,7 +7,7 @@
             return DicePairScoreCalculator.ObviousNonsense(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
-        if (IsNonsenseNameTwo(scoringType))
+        if (DiceTwoPairScoreCalculator.IsNonsenseNameTwo(scoringType))
         {
             return DiceTwoPairScoreCalculator.ObviousNonsenseTwo(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
@@ -21,11 +21,6 @@
         }
 
         return 0;
-    }
-
-    private static bool IsNonsenseNameTwo(ScoringType scoringType)
-    {
-        return scoringType == ScoringType.TwoPair;
     }
 
     private static bool IsNonsenseName(ScoringType scoringType)
