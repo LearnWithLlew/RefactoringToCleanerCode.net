@@ -20,7 +20,7 @@ internal class DiceFiveOfAKindScoreCalculator
         return 0;
     }
 
-    public static bool IsScorable(ScoringType scoringType)
+    public bool IsScorable(ScoringType scoringType)
     {
         return scoringType == ScoringType.FiveOfAKind;
     }
