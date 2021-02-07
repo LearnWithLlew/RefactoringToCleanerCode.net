@@ -9,7 +9,7 @@
 
         if (DiceTwoPairScoreCalculator.IsNonsenseNameTwo(scoringType))
         {
-            return DiceTwoPairScoreCalculator.ObviousNonsenseTwo(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            return DiceTwoPairScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
         if (DiceFullHouseScoreCalculator.IsNonsenseNameThree(scoringType))
         {
