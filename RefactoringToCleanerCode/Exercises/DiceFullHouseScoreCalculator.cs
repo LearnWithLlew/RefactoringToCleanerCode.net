@@ -43,7 +43,7 @@ static internal class DiceFullHouseScoreCalculator
         return 0;
     }
 
-    public static bool IsNonsenseNameThree(ScoringType scoringType)
+    public static bool IsScorable(ScoringType scoringType)
     {
         return scoringType == ScoringType.FullHouse;
     }
