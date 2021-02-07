@@ -18,9 +18,10 @@
             }
         }
         {
-            if (new DiceFullHouseScoreCalculator().IsScorable(scoringType))
+            var scorer = new DiceFullHouseScoreCalculator();
+            if (scorer.IsScorable(scoringType))
             {
-                return new DiceFullHouseScoreCalculator().CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                return scorer.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
         {
