@@ -15,9 +15,11 @@
                 return new DiceTwoPairScoreCalculator().CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
-        if (new DiceFullHouseScoreCalculator().IsScorable(scoringType))
         {
-            return new DiceFullHouseScoreCalculator().CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            if (new DiceFullHouseScoreCalculator().IsScorable(scoringType))
+            {
+                return new DiceFullHouseScoreCalculator().CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            }
         }
         if (new DiceFiveOfAKindScoreCalculator().IsScorable(scoringType))
         {
