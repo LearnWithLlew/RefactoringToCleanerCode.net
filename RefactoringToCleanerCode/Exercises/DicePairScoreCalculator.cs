@@ -1,6 +1,6 @@
 internal class DicePairScoreCalculator
 {
-    public static int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
+    public int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
         const int value = 2;
         int[] tallies1;
