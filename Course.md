@@ -1,4 +1,6 @@
-## Refactoring to Cleaner Code
+# Refactoring to Cleaner Code
+
+## Setup
 
 * [ ] Validate environment
     * [ ] Run the tests (`Ctrl-U, Ctrl-L`)
