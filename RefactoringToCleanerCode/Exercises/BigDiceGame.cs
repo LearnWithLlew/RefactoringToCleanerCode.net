@@ -11,9 +11,10 @@
         }
 
         {
-            if (new DiceTwoPairScoreCalculator().IsScorable(scoringType))
+            var scorer = new DiceTwoPairScoreCalculator();
+            if (scorer.IsScorable(scoringType))
             {
-                return new DiceTwoPairScoreCalculator().CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
+                return scorer.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
         {
