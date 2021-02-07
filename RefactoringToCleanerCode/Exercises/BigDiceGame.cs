@@ -15,12 +15,17 @@
         {
             return DiceFullHouseScoreCalculator.ObviousNonsenseThree(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        if (scoringType == ScoringType.FiveOfAKind)
+        if (IsNonsenseNameFour(scoringType))
         {
             return DiceFiveOfAKindScoreCalculator.ObviousNonsenseFour(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
         return 0;
+    }
+
+    private static bool IsNonsenseNameFour(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.FiveOfAKind;
     }
 
     private static bool IsNonsenseNameThree(ScoringType scoringType)
