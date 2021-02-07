@@ -17,7 +17,7 @@
         }
         if (DiceFiveOfAKindScoreCalculator.IsNonsenseNameFour(scoringType))
         {
-            return DiceFiveOfAKindScoreCalculator.ObviousNonsenseFour(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            return DiceFiveOfAKindScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
         return 0;
