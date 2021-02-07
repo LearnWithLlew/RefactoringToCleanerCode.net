@@ -1,4 +1,10 @@
-internal class DicePairScoreCalculator
+internal interface IScorer
+{
+    int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive);
+    bool IsScorable(ScoringType scoringType);
+}
+
+internal class DicePairScoreCalculator : IScorer
 {
     public int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
