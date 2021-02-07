@@ -11,7 +11,7 @@
         {
             return DiceTwoPairScoreCalculator.ObviousNonsenseTwo(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        if (scoringType == ScoringType.FullHouse)
+        if (IsNonsenseNameThree(scoringType))
         {
             return DiceFullHouseScoreCalculator.ObviousNonsenseThree(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
@@ -21,6 +21,11 @@
         }
 
         return 0;
+    }
+
+    private static bool IsNonsenseNameThree(ScoringType scoringType)
+    {
+        return scoringType == ScoringType.FullHouse;
     }
 
     private static bool IsNonsenseNameTwo(ScoringType scoringType)
