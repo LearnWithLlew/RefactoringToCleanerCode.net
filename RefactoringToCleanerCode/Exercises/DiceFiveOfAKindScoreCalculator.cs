@@ -1,4 +1,4 @@
-static internal class DiceFiveOfAKindScoreCalculator
+internal class DiceFiveOfAKindScoreCalculator
 {
     public static int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
