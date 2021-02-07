@@ -13,7 +13,7 @@
         }
         if (DiceFullHouseScoreCalculator.IsNonsenseNameThree(scoringType))
         {
-            return DiceFullHouseScoreCalculator.ObviousNonsenseThree(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            return DiceFullHouseScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
         if (DiceFiveOfAKindScoreCalculator.IsNonsenseNameFour(scoringType))
         {
