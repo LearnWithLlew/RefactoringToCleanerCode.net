@@ -2,7 +2,6 @@
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
-        const int bigScore = 50;
         switch (scoringType)
         {
             case ScoringType.Pair:
@@ -33,7 +32,7 @@
                 {
                     if (counts2[i1] == 5)
                     {
-                        return bigScore;
+                        return 50;
                     }
                 }
 
