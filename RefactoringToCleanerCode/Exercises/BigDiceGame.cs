@@ -6,15 +6,16 @@
         {
             return DicePairScoreCalculator.ObviousNonsense(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        else if (scoringType == ScoringType.TwoPair)
+
+        if (scoringType == ScoringType.TwoPair)
         {
             return DiceTwoPairScoreCalculator.ObviousNonsenseTwo(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        else if (scoringType == ScoringType.FullHouse)
+        if (scoringType == ScoringType.FullHouse)
         {
             return DiceFullHouseScoreCalculator.ObviousNonsenseThree(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
-        else if (scoringType == ScoringType.FiveOfAKind)
+        if (scoringType == ScoringType.FiveOfAKind)
         {
             return DiceFiveOfAKindScoreCalculator.ObviousNonsenseFour(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
