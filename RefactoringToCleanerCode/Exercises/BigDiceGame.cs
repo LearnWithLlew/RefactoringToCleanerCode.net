@@ -2,13 +2,15 @@
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
+        foreach (IScorer scorer in new IScorer[]
         {
-            foreach (IScorer scorer in new IScorer[]{ new DicePairScoreCalculator(), new DiceTwoPairScoreCalculator() , new DiceFullHouseScoreCalculator(), new DiceFiveOfAKindScoreCalculator() })
+            new DicePairScoreCalculator(), new DiceTwoPairScoreCalculator(), new DiceFullHouseScoreCalculator(),
+            new DiceFiveOfAKindScoreCalculator()
+        })
+        {
+            if (scorer.IsScorable(scoringType))
             {
-                if (scorer.IsScorable(scoringType))
-                {
-                    return scorer.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
-                }
+                return scorer.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
             }
         }
 
