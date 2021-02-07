@@ -11,7 +11,7 @@
         }
 
         {
-            var scorer = new DiceTwoPairScoreCalculator();
+            DiceTwoPairScoreCalculator scorer = new DiceTwoPairScoreCalculator();
             if (scorer.IsScorable(scoringType))
             {
                 return scorer.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
