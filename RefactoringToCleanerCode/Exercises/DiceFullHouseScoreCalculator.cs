@@ -1,4 +1,4 @@
-internal class DiceFullHouseScoreCalculator
+internal class DiceFullHouseScoreCalculator : IScorer
 {
     public int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
