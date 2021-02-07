@@ -4,7 +4,7 @@
     {
         if (DicePairScoreCalculator.IsNonsenseName(scoringType))
         {
-            return DicePairScoreCalculator.ObviousNonsense(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            return DicePairScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
         if (DiceTwoPairScoreCalculator.IsNonsenseNameTwo(scoringType))
