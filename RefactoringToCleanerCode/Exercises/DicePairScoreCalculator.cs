@@ -21,7 +21,7 @@ internal class DicePairScoreCalculator
         return 0;
     }
 
-    public static bool IsScorable(ScoringType scoringType)
+    public bool IsScorable(ScoringType scoringType)
     {
         return scoringType == ScoringType.Pair;
     }

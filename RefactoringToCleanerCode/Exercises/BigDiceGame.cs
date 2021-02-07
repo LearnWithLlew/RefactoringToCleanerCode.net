@@ -2,7 +2,7 @@
 {
     public static int CalculateScore(ScoringType scoringType, int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
-        if (DicePairScoreCalculator.IsScorable(scoringType))
+        if (new DicePairScoreCalculator().IsScorable(scoringType))
         {
             return DicePairScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
