@@ -1,6 +1,6 @@
 internal class DiceFiveOfAKindScoreCalculator
 {
-    public static int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
+    public int CalculateScore(int dieOne, int dieTwo, int dieThree, int dieFour, int dieFive)
     {
         int[] dice1 = {dieOne, dieTwo, dieThree, dieFour, dieFive};
         var counts2 = new int[6];

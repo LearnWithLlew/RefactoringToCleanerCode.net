@@ -17,7 +17,7 @@
         }
         if (new DiceFiveOfAKindScoreCalculator().IsScorable(scoringType))
         {
-            return DiceFiveOfAKindScoreCalculator.CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
+            return new DiceFiveOfAKindScoreCalculator().CalculateScore(dieOne, dieTwo, dieThree, dieFour, dieFive);
         }
 
         return 0;
