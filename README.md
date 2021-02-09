@@ -19,3 +19,8 @@ If you want to sign up for one of our weekend courses, see our [EventBrite page]
 You can follow us on Twitter at [@JayBazuzi](https://twitter.com/JayBazuzi) and [@LlewellynFalco](https://twitter.com/LlewellynFalco). 
 
 Or you can [hire us to clean your code](https://github.com/LearnWithLlew/RefactoringToCleanerCode.Slides/raw/main/marketing/CodeCleanerForHire.pdf). 
+
+# F.A.Q
+
+**Q:** The resharper keyboard bindings don't seem to be working, how do I fix that?
+**A:** We are using the `Visual Studio` version of the Keybindings. [Here's how to reset them](https://www.jetbrains.com/help/resharper/Configuring_Keyboard_Shortcuts.html).
