@@ -24,6 +24,7 @@
 - [ ] Open Solution, build, run tests, turn off NCrunch
 - [ ] Check keyboard shortcuts in Visual Studio
     - [ ] Ctrl-Shift-R
+    - [ ] Ctrl-U, Ctrl-L
 - [ ] Get slides onto machine via Office 365
 - [ ] Make a branch
 - [ ] Enable `Show procedure line separators`
