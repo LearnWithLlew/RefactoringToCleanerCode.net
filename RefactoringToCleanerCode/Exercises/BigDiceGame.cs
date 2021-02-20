@@ -14,7 +14,7 @@
 
         if (new FullHouse().IsStuff3(st))
         {
-            return FullHouse.stuff3(die1, die2, die3, die4, die5);
+            return new FullHouse().stuff3(die1, die2, die3, die4, die5);
         }
 
         if (FiveOfAKind.IsStuff4(st))
