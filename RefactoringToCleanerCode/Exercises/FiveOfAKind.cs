@@ -1,4 +1,4 @@
-internal class FiveOfAKind
+internal class FiveOfAKind : IScorer
 {
     public int CalculateScore(int die1, int die2, int die3, int die4, int die5)
     {
