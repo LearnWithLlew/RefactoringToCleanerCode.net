@@ -19,7 +19,7 @@
         }
 
         {
-            FullHouse scorer = new FullHouse();
+            IScorer scorer = new FullHouse();
             if (scorer.IsScorable(st))
             {
                 return scorer.CalculateScore(die1, die2, die3, die4, die5);
