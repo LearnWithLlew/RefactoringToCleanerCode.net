@@ -21,7 +21,7 @@ internal class Pair
         return 0;
     }
 
-    public static bool IsStuff(ScoringType st)
+    public bool IsStuff(ScoringType st)
     {
         return st == ScoringType.Pair;
     }
