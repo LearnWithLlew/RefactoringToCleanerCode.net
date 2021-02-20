@@ -2,7 +2,9 @@
 {
     public static int CalculateScore(ScoringType st, int die1, int die2, int die3, int die4, int die5)
     {
-        foreach (var scorer in new IScorer[] {new Pair(), new TwoPair(), new FullHouse(), new FiveOfAKind()})
+        var scorers = new IScorer[] {new Pair(), new TwoPair(), new FullHouse(), new FiveOfAKind()};
+
+        foreach (var scorer in scorers)
         {
             if (scorer.IsScorable(st))
             {
