@@ -1,4 +1,10 @@
-internal class Pair
+internal interface IScorer
+{
+    int CalculateScore(int die1, int die2, int die3, int die4, int die5);
+    bool IsScorable(ScoringType st);
+}
+
+internal class Pair : IScorer
 {
     public int CalculateScore(int die1, int die2, int die3, int die4, int die5)
     {
