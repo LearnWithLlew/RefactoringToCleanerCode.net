@@ -12,7 +12,7 @@
             return new TwoPair().Stuff2(die1, die2, die3, die4, die5);
         }
 
-        if (FullHouse.IsStuff3(st))
+        if (new FullHouse().IsStuff3(st))
         {
             return FullHouse.stuff3(die1, die2, die3, die4, die5);
         }
