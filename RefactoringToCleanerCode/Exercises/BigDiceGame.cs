@@ -6,7 +6,7 @@ public static class BigDiceGame
     {
         var scorers = new IScorer[] {new Pair(), new TwoPair(), new FullHouse(), new FiveOfAKind()};
 
-        return (scorers.Where(scorer => scorer.IsScorable(st))
-            .Select(scorer => scorer.CalculateScore(die1, die2, die3, die4, die5))).FirstOrDefault();
+        return scorers.Where(scorer => scorer.IsScorable(st))
+            .Select(scorer => scorer.CalculateScore(die1, die2, die3, die4, die5)).FirstOrDefault();
     }
 }
