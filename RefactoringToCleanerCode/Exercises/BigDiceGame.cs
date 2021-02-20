@@ -4,7 +4,7 @@
     {
         if (new Pair().IsStuff(st))
         {
-            return new Pair().Stuff(die1, die2, die3, die4, die5);
+            return new Pair().CalculateScore(die1, die2, die3, die4, die5);
         }
 
         if (new TwoPair().IsStuff2(st))
