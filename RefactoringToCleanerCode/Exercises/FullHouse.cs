@@ -43,7 +43,7 @@ internal class FullHouse
         return 0;
     }
 
-    public bool IsStuff3(ScoringType st)
+    public bool IsScorable(ScoringType st)
     {
         return st == ScoringType.FullHouse;
     }
