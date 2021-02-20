@@ -27,7 +27,7 @@
         }
 
         {
-            var scorer = new FiveOfAKind();
+            FiveOfAKind scorer = new FiveOfAKind();
             if (scorer.IsScorable(st))
             {
                 return scorer.CalculateScore(die1, die2, die3, die4, die5);
