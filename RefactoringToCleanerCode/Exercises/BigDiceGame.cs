@@ -3,9 +3,10 @@
     public static int CalculateScore(ScoringType st, int die1, int die2, int die3, int die4, int die5)
     {
         {
-            if (new Pair().IsScorable(st))
+            var scorer = new Pair();
+            if (scorer.IsScorable(st))
             {
-                return new Pair().CalculateScore(die1, die2, die3, die4, die5);
+                return scorer.CalculateScore(die1, die2, die3, die4, die5);
             }
         }
 
