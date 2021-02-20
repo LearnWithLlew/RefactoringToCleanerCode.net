@@ -1,6 +1,6 @@
 internal class FullHouse
 {
-    public int stuff3(int die1, int die2, int die3, int die4, int die5)
+    public int CalculateScore(int die1, int die2, int die3, int die4, int die5)
     {
         int[] tallies;
         var _2 = false;
