@@ -1,4 +1,4 @@
-static internal class FullHouse
+internal class FullHouse
 {
     public static int stuff3(int die1, int die2, int die3, int die4, int die5)
     {
