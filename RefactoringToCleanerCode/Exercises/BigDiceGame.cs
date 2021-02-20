@@ -17,7 +17,7 @@
             return new FullHouse().stuff3(die1, die2, die3, die4, die5);
         }
 
-        if (new FiveOfAKind().IsStuff4(st))
+        if (new FiveOfAKind().IsScorable(st))
         {
             return new FiveOfAKind().Stuff4(die1, die2, die3, die4, die5);
         }

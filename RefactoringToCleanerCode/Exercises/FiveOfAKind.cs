@@ -20,7 +20,7 @@ internal class FiveOfAKind
         return 0;
     }
 
-    public bool IsStuff4(ScoringType st)
+    public bool IsScorable(ScoringType st)
     {
         return st == ScoringType.FiveOfAKind;
     }
