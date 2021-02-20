@@ -23,9 +23,11 @@
             }
         }
 
-        if (new FiveOfAKind().IsScorable(st))
         {
-            return new FiveOfAKind().CalculateScore(die1, die2, die3, die4, die5);
+            if (new FiveOfAKind().IsScorable(st))
+            {
+                return new FiveOfAKind().CalculateScore(die1, die2, die3, die4, die5);
+            }
         }
 
         return 0;
