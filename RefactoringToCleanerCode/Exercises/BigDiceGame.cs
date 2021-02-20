@@ -12,7 +12,7 @@
             return TwoPair.Stuff2(die1, die2, die3, die4, die5);
         }
 
-        if (st == ScoringType.FullHouse)
+        if (IsStuff3(st))
         {
             return FullHouse.stuff3(die1, die2, die3, die4, die5);
         }
@@ -23,6 +23,11 @@
         }
 
         return 0;
+    }
+
+    private static bool IsStuff3(ScoringType st)
+    {
+        return st == ScoringType.FullHouse;
     }
 
     private static bool IsStuff2(ScoringType st)
