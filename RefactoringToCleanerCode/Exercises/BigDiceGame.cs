@@ -11,7 +11,7 @@
         }
 
         {
-            TwoPair scorer = new TwoPair();
+            IScorer scorer = new TwoPair();
             if (scorer.IsScorable(st))
             {
                 return scorer.CalculateScore(die1, die2, die3, die4, die5);
