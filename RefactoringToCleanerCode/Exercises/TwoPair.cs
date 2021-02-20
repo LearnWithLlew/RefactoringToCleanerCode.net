@@ -1,4 +1,4 @@
-static internal class TwoPair
+internal class TwoPair
 {
     public static int Stuff2(int die1, int die2, int die3, int die4, int die5)
     {
