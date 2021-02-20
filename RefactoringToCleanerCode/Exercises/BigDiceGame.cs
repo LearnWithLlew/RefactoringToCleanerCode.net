@@ -19,9 +19,10 @@
         }
 
         {
-            if (new FullHouse().IsScorable(st))
+            var scorer = new FullHouse();
+            if (scorer.IsScorable(st))
             {
-                return new FullHouse().CalculateScore(die1, die2, die3, die4, die5);
+                return scorer.CalculateScore(die1, die2, die3, die4, die5);
             }
         }
 
