@@ -7,7 +7,7 @@
             return new Pair().CalculateScore(die1, die2, die3, die4, die5);
         }
 
-        if (new TwoPair().IsStuff2(st))
+        if (new TwoPair().IsScorable(st))
         {
             return new TwoPair().Stuff2(die1, die2, die3, die4, die5);
         }
