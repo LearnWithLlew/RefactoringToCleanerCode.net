@@ -42,4 +42,9 @@ static internal class FullHouse
 
         return 0;
     }
+
+    public static bool IsStuff3(ScoringType st)
+    {
+        return st == ScoringType.FullHouse;
+    }
 }
