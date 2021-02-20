@@ -7,7 +7,7 @@
             return new Pair().Stuff(die1, die2, die3, die4, die5);
         }
 
-        if (TwoPair.IsStuff2(st))
+        if (new TwoPair().IsStuff2(st))
         {
             return TwoPair.Stuff2(die1, die2, die3, die4, die5);
         }
