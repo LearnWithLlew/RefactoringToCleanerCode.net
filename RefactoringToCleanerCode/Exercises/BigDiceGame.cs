@@ -17,12 +17,17 @@
             return FullHouse.stuff3(die1, die2, die3, die4, die5);
         }
 
-        if (st == ScoringType.FiveOfAKind)
+        if (IsStuff4(st))
         {
             return FiveOfAKind.Stuff4(die1, die2, die3, die4, die5);
         }
 
         return 0;
+    }
+
+    private static bool IsStuff4(ScoringType st)
+    {
+        return st == ScoringType.FiveOfAKind;
     }
 
     private static bool IsStuff3(ScoringType st)
