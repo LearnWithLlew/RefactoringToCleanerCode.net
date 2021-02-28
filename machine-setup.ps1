@@ -15,6 +15,7 @@ cinst typora
 mkdir C:\Source\
 pushd C:\Source\
 
+Set-Alias github $env:LOCALAPPDATA\GitHubDesktop\bin\github.bat
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/RefactoringToCleanerCode.slides.git
 pushd RefactoringToCleanerCode.Slides\
 github .
@@ -29,7 +30,8 @@ pushd RefactoringToCleanerCode.net
 github .
 & "C:\Program Files\dotnet\dotnet.exe" test RefactoringToCleanerCode\
 & "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe" RefactoringToCleanerCode\RefactoringToCleanerCode.sln
-git push
+# force prompt for credentials
+& 'C:\Program Files\Git\cmd\git.exe' push
 popd
 
 popd
