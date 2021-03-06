@@ -19,7 +19,7 @@
 
         if (new FiveOfAKindScoreCalculator().IsApplicable(st))
         {
-            return FiveOfAKindScoreCalculator.CalculateScore(die1, die2, die3, die4, die5);
+            return new FiveOfAKindScoreCalculator().CalculateScore(die1, die2, die3, die4, die5);
         }
 
         return 0;
