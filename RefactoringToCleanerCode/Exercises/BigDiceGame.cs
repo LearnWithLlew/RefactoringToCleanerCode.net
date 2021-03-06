@@ -4,7 +4,7 @@
     {
         if (PairScoreCalculator.IsNonsense1(st))
         {
-            return PairScoreCalculator.Pararaph(die1, die2, die3, die4, die5);
+            return PairScoreCalculator.CalculateScore(die1, die2, die3, die4, die5);
         }
 
         if (TwoPairScoreCalculator.IsNonsense2(st))
