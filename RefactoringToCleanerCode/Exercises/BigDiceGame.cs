@@ -12,7 +12,7 @@
             return TwoPairScoreCalculator.CalculateScore(die1, die2, die3, die4, die5);
         }
 
-        if (FullHouseScoreCalculator.IsNonsense3(st))
+        if (FullHouseScoreCalculator.IsApplicable(st))
         {
             return FullHouseScoreCalculator.CalculateScore(die1, die2, die3, die4, die5);
         }
