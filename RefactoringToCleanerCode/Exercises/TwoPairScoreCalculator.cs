@@ -26,4 +26,9 @@ internal static class TwoPairScoreCalculator
 
         return 0;
     }
+
+    public static bool IsNonsense2(ScoringType st)
+    {
+        return st == ScoringType.TwoPair;
+    }
 }

@@ -7,7 +7,7 @@
             return PairScoreCalculator.FirstPararaph(die1, die2, die3, die4, die5);
         }
 
-        if (IsNonsense2(st))
+        if (TwoPairScoreCalculator.IsNonsense2(st))
         {
             return TwoPairScoreCalculator.SecondParagraph(die1, die2, die3, die4, die5);
         }
@@ -33,10 +33,5 @@
     private static bool IsNonsense3(ScoringType st)
     {
         return st == ScoringType.FullHouse;
-    }
-
-    private static bool IsNonsense2(ScoringType st)
-    {
-        return st == ScoringType.TwoPair;
     }
 }
