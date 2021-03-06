@@ -12,11 +12,10 @@ public static class BigDiceGame
 
     private static IScoreCalculator[] GetScoreCalculators()
     {
-        var scoreCalculators = new IScoreCalculator[]
+        return new IScoreCalculator[]
         {
             new PairScoreCalculator(), new TwoPairScoreCalculator(), new FullHouseScoreCalculator(),
             new FiveOfAKindScoreCalculator()
         };
-        return scoreCalculators;
     }
 }
