@@ -27,7 +27,8 @@
         }
 
         {
-            if (new FiveOfAKindScoreCalculator().IsApplicable(st))
+            var scoreCalculator = new FiveOfAKindScoreCalculator();
+            if (scoreCalculator.IsApplicable(st))
             {
                 return new FiveOfAKindScoreCalculator().CalculateScore(die1, die2, die3, die4, die5);
             }
