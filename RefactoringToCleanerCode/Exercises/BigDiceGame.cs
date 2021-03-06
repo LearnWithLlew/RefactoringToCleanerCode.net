@@ -14,7 +14,7 @@
 
         if (FullHouseScoreCalculator.IsNonsense3(st))
         {
-            return FullHouseScoreCalculator.Paragraph(die1, die2, die3, die4, die5);
+            return FullHouseScoreCalculator.CalculateScore(die1, die2, die3, die4, die5);
         }
 
         if (FiveOfAKindScoreCalculator.IsNonsense4(st))
