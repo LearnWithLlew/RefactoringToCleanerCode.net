@@ -19,7 +19,7 @@
 
         if (FiveOfAKindScoreCalculator.IsNonsense4(st))
         {
-            return FiveOfAKindScoreCalculator.FourthParagraph(die1, die2, die3, die4, die5);
+            return FiveOfAKindScoreCalculator.Paragraph(die1, die2, die3, die4, die5);
         }
 
         return 0;
