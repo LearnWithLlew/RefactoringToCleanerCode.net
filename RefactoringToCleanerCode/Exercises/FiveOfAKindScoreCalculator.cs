@@ -1,4 +1,4 @@
-static internal class FiveOfAKindScoreCalculator
+internal static class FiveOfAKindScoreCalculator
 {
     public static int FourthParagraph(int die1, int die2, int die3, int die4, int die5)
     {

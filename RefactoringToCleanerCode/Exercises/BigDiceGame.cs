@@ -6,15 +6,18 @@
         {
             return PairScoreCalculator.FirstPararaph(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.TwoPair)
+
+        if (st == ScoringType.TwoPair)
         {
             return TwoPairScoreCalculator.SecondParagraph(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.FullHouse)
+
+        if (st == ScoringType.FullHouse)
         {
             return FullHouseScoreCalculator.ThirdParagraph(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.FiveOfAKind)
+
+        if (st == ScoringType.FiveOfAKind)
         {
             return FiveOfAKindScoreCalculator.FourthParagraph(die1, die2, die3, die4, die5);
         }

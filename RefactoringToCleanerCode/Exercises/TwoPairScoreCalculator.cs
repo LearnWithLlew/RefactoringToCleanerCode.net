@@ -1,4 +1,4 @@
-static internal class TwoPairScoreCalculator
+internal static class TwoPairScoreCalculator
 {
     public static int SecondParagraph(int die1, int die2, int die3, int die4, int die5)
     {
