@@ -19,7 +19,7 @@
         }
 
         {
-            FullHouseScoreCalculator scoreCalculator = new FullHouseScoreCalculator();
+            IScoreCalculator scoreCalculator = new FullHouseScoreCalculator();
             if (scoreCalculator.IsApplicable(st))
             {
                 return scoreCalculator.CalculateScore(die1, die2, die3, die4, die5);
