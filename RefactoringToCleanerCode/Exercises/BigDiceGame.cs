@@ -19,9 +19,10 @@
         }
 
         {
-            if (new FullHouseScoreCalculator().IsApplicable(st))
+            var scoreCalculator = new FullHouseScoreCalculator();
+            if (scoreCalculator.IsApplicable(st))
             {
-                return new FullHouseScoreCalculator().CalculateScore(die1, die2, die3, die4, die5);
+                return scoreCalculator.CalculateScore(die1, die2, die3, die4, die5);
             }
         }
 
