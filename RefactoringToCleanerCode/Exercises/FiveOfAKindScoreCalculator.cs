@@ -21,7 +21,7 @@ internal static class FiveOfAKindScoreCalculator
         return 0;
     }
 
-    public static bool IsNonsense4(ScoringType st)
+    public static bool IsApplicable(ScoringType st)
     {
         return st == ScoringType.FiveOfAKind;
     }
