@@ -10,7 +10,7 @@ public static class BigDiceGame
             new FiveOfAKindScoreCalculator()
         };
 
-        return (scoreCalculators.Where(scoreCalculator => scoreCalculator.IsApplicable(st))
-            .Select(scoreCalculator => scoreCalculator.CalculateScore(die1, die2, die3, die4, die5))).FirstOrDefault();
+        return scoreCalculators.Where(scoreCalculator => scoreCalculator.IsApplicable(st))
+            .Select(scoreCalculator => scoreCalculator.CalculateScore(die1, die2, die3, die4, die5)).FirstOrDefault();
     }
 }
