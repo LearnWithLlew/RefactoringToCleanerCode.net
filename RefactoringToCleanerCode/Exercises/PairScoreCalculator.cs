@@ -21,7 +21,7 @@ internal class PairScoreCalculator
         return 0;
     }
 
-    public static bool IsApplicable(ScoringType st)
+    public bool IsApplicable(ScoringType st)
     {
         return st == ScoringType.Pair;
     }
