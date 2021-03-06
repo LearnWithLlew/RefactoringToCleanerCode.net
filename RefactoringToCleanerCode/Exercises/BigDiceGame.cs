@@ -2,11 +2,13 @@
 {
     public static int CalculateScore(ScoringType st, int die1, int die2, int die3, int die4, int die5)
     {
-        foreach (var scoreCalculator in new IScoreCalculator[]
+        var scoreCalculators = new IScoreCalculator[]
         {
             new PairScoreCalculator(), new TwoPairScoreCalculator(), new FullHouseScoreCalculator(),
             new FiveOfAKindScoreCalculator()
-        })
+        };
+
+        foreach (var scoreCalculator in scoreCalculators)
         {
             if (scoreCalculator.IsApplicable(st))
             {
