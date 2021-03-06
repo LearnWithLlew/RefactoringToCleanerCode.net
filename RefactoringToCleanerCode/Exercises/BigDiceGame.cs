@@ -14,7 +14,7 @@
 
         if (new FullHouseScoreCalculator().IsApplicable(st))
         {
-            return FullHouseScoreCalculator.CalculateScore(die1, die2, die3, die4, die5);
+            return new FullHouseScoreCalculator().CalculateScore(die1, die2, die3, die4, die5);
         }
 
         if (FiveOfAKindScoreCalculator.IsApplicable(st))
