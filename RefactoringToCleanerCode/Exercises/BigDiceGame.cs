@@ -17,12 +17,17 @@
             return FullHouseScoreCalculator.ThirdParagraph(die1, die2, die3, die4, die5);
         }
 
-        if (st == ScoringType.FiveOfAKind)
+        if (IsNonsense4(st))
         {
             return FiveOfAKindScoreCalculator.FourthParagraph(die1, die2, die3, die4, die5);
         }
 
         return 0;
+    }
+
+    private static bool IsNonsense4(ScoringType st)
+    {
+        return st == ScoringType.FiveOfAKind;
     }
 
     private static bool IsNonsense3(ScoringType st)
