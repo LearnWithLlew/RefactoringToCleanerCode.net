@@ -6,7 +6,7 @@
     * [ ] Run the tests (`Ctrl-U, Ctrl-L`)
 * [ ] NCrunch (`Alt-U`)
     * [ ] Enable NCrunch
-    * [ ] Ensure **Risk/Progress** window is open and floating
+    * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
 
 ## Scenario
 
