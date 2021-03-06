@@ -9,7 +9,7 @@
 
         if (TwoPairScoreCalculator.IsNonsense2(st))
         {
-            return TwoPairScoreCalculator.SecondParagraph(die1, die2, die3, die4, die5);
+            return TwoPairScoreCalculator.Paragraph(die1, die2, die3, die4, die5);
         }
 
         if (FullHouseScoreCalculator.IsNonsense3(st))
