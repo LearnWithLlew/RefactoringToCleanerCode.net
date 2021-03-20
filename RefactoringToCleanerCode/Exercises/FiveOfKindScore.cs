@@ -20,7 +20,7 @@ static internal class FiveOfKindScore
         return 0;
     }
 
-    public static bool IsSomeCondition4(ScoringType st)
+    public static bool IsSomeCondition(ScoringType st)
     {
         return st == ScoringType.FiveOfAKind;
     }
