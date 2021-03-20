@@ -1,6 +1,6 @@
 internal class TwoPairScore
 {
-    public static int Evaluate(int die1, int die2, int die3, int die4, int die5)
+    public int Evaluate(int die1, int die2, int die3, int die4, int die5)
     {
         var counts1 = new int[6];
         counts1[die1 - 1]++;
