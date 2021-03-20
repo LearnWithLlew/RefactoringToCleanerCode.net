@@ -51,15 +51,16 @@ We are looking at large method that we don't understand, and we want to clean up
  - [ ] ## Activity 4: Remove duplication
 
     1. Make similar things identical
-    2. Surround with blocks
+    2. Surround each `if` with a block
+    3. Make each class non-static
     4. Apply Refactoring Combo: Make non-static
-    2. Extract local variable
-    5. Extract interface
-    6. Many-of-one
-    7. Use base type
-    8. Apply interface and move to many
-    9. Extract list of scorers
-    10. Extract apply scorers
+    5. Extract local variable
+    6. Extract interface
+    7. Many-of-one
+    8. Use base type
+    9. Apply interface and move to many
+    10. Extract list of scorers
+    11. Extract apply scorers
 
 ## Smell: bad names
 
