@@ -1,6 +1,6 @@
 static internal class FullHouseScore
 {
-    public static int SomeFunction2(int die1, int die2, int die3, int die4, int die5)
+    public static int Evaluate(int die1, int die2, int die3, int die4, int die5)
     {
         int[] tallies;
         var _2 = false;
