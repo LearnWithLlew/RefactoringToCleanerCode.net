@@ -11,7 +11,7 @@
         }
 
         {
-            TwoPairScore score = new TwoPairScore();
+            IScore score = new TwoPairScore();
             if (score.IsSomeCondition(st))
             {
                 return score.Evaluate(die1, die2, die3, die4, die5);
