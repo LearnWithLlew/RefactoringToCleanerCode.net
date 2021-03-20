@@ -43,7 +43,7 @@
         return 0;
     }
 
-    public bool IsSomeCondition(ScoringType st)
+    public bool IsScorable(ScoringType st)
     {
         return st == ScoringType.FullHouse;
     }

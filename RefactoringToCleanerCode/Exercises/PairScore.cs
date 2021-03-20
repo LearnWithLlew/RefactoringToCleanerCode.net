@@ -1,7 +1,7 @@
  internal interface IScore
  {
      int Evaluate(int die1, int die2, int die3, int die4, int die5);
-     bool IsSomeCondition(ScoringType st);
+     bool IsScorable(ScoringType st);
  }
 
  internal class PairScore : IScore
@@ -27,7 +27,7 @@
         return 0;
     }
 
-    public bool IsSomeCondition(ScoringType st)
+    public bool IsScorable(ScoringType st)
     {
         return st == ScoringType.Pair;
     }
