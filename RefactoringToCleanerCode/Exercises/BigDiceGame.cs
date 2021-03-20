@@ -10,7 +10,7 @@
         }
 
         {
-            if (TwoPairScore.IsSomeCondition(st))
+            if (new TwoPairScore().IsSomeCondition(st))
             {
                 return new TwoPairScore().Evaluate(die1, die2, die3, die4, die5);
             }
