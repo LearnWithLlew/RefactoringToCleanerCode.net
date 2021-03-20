@@ -98,22 +98,27 @@
 
             case ScoringType.FiveOfAKind:
             {
-                int[] dice1 = {die1, die2, d3, dieFour, fifthDie};
-                var counts2 = new int[6];
-                foreach (var die in dice1)
-                {
-                    counts2[die - 1]++;
-                }
+                return someFunction(die1, die2, d3, dieFour, fifthDie, bigScore);
+            }
+        }
 
-                for (var i1 = 0; i1 != 6; i1++)
-                {
-                    if (counts2[i1] == 5)
-                    {
-                        return bigScore;
-                    }
-                }
+        return 0;
+    }
 
-                return 0;
+    private static int someFunction(int die1, int die2, int d3, int dieFour, int fifthDie, int bigScore)
+    {
+        int[] dice1 = {die1, die2, d3, dieFour, fifthDie};
+        var counts2 = new int[6];
+        foreach (var die in dice1)
+        {
+            counts2[die - 1]++;
+        }
+
+        for (var i1 = 0; i1 != 6; i1++)
+        {
+            if (counts2[i1] == 5)
+            {
+                return bigScore;
             }
         }
 
