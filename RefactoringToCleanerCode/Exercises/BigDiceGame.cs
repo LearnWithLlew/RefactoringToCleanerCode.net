@@ -11,7 +11,7 @@
         {
             return TwoPairScore.Evaluate(die1, die2, die3, die4, die5);
         }
-        if (IsSomeCondition3(st))
+        if (FullHouseScore.IsSomeCondition3(st))
         {
             return FullHouseScore.Evaluate(die1, die2, die3, die4, die5);
         }
@@ -21,11 +21,6 @@
         }
 
         return 0;
-    }
-
-    private static bool IsSomeCondition3(ScoringType st)
-    {
-        return st == ScoringType.FullHouse;
     }
 
     private static bool IsSomeCondition2(ScoringType st)
