@@ -26,4 +26,9 @@ static internal class TwoPairScore
 
         return 0;
     }
+
+    public static bool IsSomeCondition2(ScoringType st)
+    {
+        return st == ScoringType.TwoPair;
+    }
 }

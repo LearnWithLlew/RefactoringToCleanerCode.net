@@ -7,7 +7,7 @@
             return PairScore.Evaluate(die1, die2, die3, die4, die5);
         }
 
-        if (IsSomeCondition2(st))
+        if (TwoPairScore.IsSomeCondition2(st))
         {
             return TwoPairScore.Evaluate(die1, die2, die3, die4, die5);
         }
@@ -21,11 +21,6 @@
         }
 
         return 0;
-    }
-
-    private static bool IsSomeCondition2(ScoringType st)
-    {
-        return st == ScoringType.TwoPair;
     }
 
     private static bool IsSomeCondition(ScoringType st)
