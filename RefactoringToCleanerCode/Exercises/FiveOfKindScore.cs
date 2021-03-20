@@ -1,4 +1,4 @@
-static internal class FiveOfKindScore
+ internal class FiveOfKindScore
 {
     public static int Evaluate(int die1, int die2, int die3, int die4, int die5)
     {
