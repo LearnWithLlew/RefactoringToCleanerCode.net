@@ -33,6 +33,7 @@
 # 20 minutes before
 
 - [ ] Launch Zoom
+	- [ ] Make Jay a co-host
 - [ ] Launch AnyDesk
 - [ ] Sync slides with OneDrive
 - [ ] Open `Course.md` in Typora
