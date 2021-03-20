@@ -11,9 +11,10 @@
         }
 
         {
-            if (new TwoPairScore().IsSomeCondition(st))
+            var score = new TwoPairScore();
+            if (score.IsSomeCondition(st))
             {
-                return new TwoPairScore().Evaluate(die1, die2, die3, die4, die5);
+                return score.Evaluate(die1, die2, die3, die4, die5);
             }
         }
         {
