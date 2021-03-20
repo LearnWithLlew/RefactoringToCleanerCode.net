@@ -18,7 +18,7 @@
             }
         }
         {
-            FullHouseScore score = new FullHouseScore();
+            IScore score = new FullHouseScore();
             if (score.IsSomeCondition(st))
             {
                 return score.Evaluate(die1, die2, die3, die4, die5);
