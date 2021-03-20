@@ -6,15 +6,16 @@
         {
             return PairScore.Evaluate(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.TwoPair)
+
+        if (st == ScoringType.TwoPair)
         {
             return TwoPairScore.Evaluate(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.FullHouse)
+        if (st == ScoringType.FullHouse)
         {
             return FullHouseScore.Evaluate(die1, die2, die3, die4, die5);
         }
-        else if (st == ScoringType.FiveOfAKind)
+        if (st == ScoringType.FiveOfAKind)
         {
             return FiveOfKindScore.Evaluate(die1, die2, die3, die4, die5);
         }
