@@ -22,7 +22,7 @@
             }
         }
         {
-            if (FiveOfKindScore.IsSomeCondition(st))
+            if (new FiveOfKindScore().IsSomeCondition(st))
             {
                 return new FiveOfKindScore().Evaluate(die1, die2, die3, die4, die5);
             }

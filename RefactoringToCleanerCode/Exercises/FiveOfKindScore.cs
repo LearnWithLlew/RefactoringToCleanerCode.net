@@ -20,7 +20,7 @@
         return 0;
     }
 
-    public static bool IsSomeCondition(ScoringType st)
+    public bool IsSomeCondition(ScoringType st)
     {
         return st == ScoringType.FiveOfAKind;
     }
