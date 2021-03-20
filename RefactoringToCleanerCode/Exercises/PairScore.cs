@@ -1,5 +1,11 @@
- internal class PairScore
-{
+ internal interface IScore
+ {
+     int Evaluate(int die1, int die2, int die3, int die4, int die5);
+     bool IsSomeCondition(ScoringType st);
+ }
+
+ internal class PairScore : IScore
+ {
     public int Evaluate(int die1, int die2, int die3, int die4, int die5)
     {
         const int value = 2;
