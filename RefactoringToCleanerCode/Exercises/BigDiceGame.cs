@@ -6,7 +6,7 @@
         {
             case ScoringType.Pair:
             {
-                return PairScore.SomeFunction4(die1, die2, die3, die4, die5);
+                return PairScore.Evaluate(die1, die2, die3, die4, die5);
             }
 
             case ScoringType.TwoPair:
