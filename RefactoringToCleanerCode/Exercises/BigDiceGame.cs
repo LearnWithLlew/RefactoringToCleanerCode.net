@@ -15,12 +15,17 @@
         {
             return FullHouseScore.Evaluate(die1, die2, die3, die4, die5);
         }
-        if (st == ScoringType.FiveOfAKind)
+        if (IsSomeCondition4(st))
         {
             return FiveOfKindScore.Evaluate(die1, die2, die3, die4, die5);
         }
 
         return 0;
+    }
+
+    private static bool IsSomeCondition4(ScoringType st)
+    {
+        return st == ScoringType.FiveOfAKind;
     }
 
     private static bool IsSomeCondition3(ScoringType st)
