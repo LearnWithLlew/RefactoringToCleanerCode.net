@@ -20,4 +20,9 @@ static internal class PairScore
 
         return 0;
     }
+
+    public static bool IsSomeCondition(ScoringType st)
+    {
+        return st == ScoringType.Pair;
+    }
 }
