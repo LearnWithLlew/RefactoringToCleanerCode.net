@@ -1,4 +1,4 @@
-internal class TwoPairScore
+internal class TwoPairScore : IScore
 {
     public int Evaluate(int die1, int die2, int die3, int die4, int die5)
     {
