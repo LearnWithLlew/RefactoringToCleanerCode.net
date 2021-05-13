@@ -3,7 +3,7 @@
 ## Setup
 
 * [ ] Validate environment
-    * [ ] Run the tests (`Ctrl-U, Ctrl-L`)
+    * [ ] Run the tests (`Ctrl-U, L`)
 * [ ] NCrunch (`Alt-U`)
     * [ ] Enable NCrunch
     * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
@@ -16,7 +16,7 @@ We are looking at large method that we don't understand, and we want to clean up
 
 - Automated refactorings "only" 
 - Commit after each refactoring
-- Every refactoring commit prefixed with `r -    `
+- Every refactoring commit prefixed with `r - `
 - Rotate typist on commit
 
 ## Improvement Loop
