@@ -22,6 +22,7 @@
 # 1 day before
 
 - [ ] Open Solution, build, run tests, turn off NCrunch
+	- May need to add real NuGet feed (https://api.nuget.org/v3/index.json) and remove offline packages feed
 - [ ] Check keyboard shortcuts in Visual Studio
     - [ ] Ctrl-Shift-R
     - [ ] Ctrl-U, Ctrl-L
