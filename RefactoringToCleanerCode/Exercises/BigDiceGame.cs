@@ -21,7 +21,7 @@
 
             case ScoringType.FiveOfAKind:
             {
-                return FiveOfAKindFinder.FourthExtract(die1, die2, die3, die4, die5);
+                return FiveOfAKindFinder.Calculate(die1, die2, die3, die4, die5);
             }
         }
 
