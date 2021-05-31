@@ -16,7 +16,7 @@
 
             case ScoringType.FullHouse:
             {
-                return FullHouseFinder.Calculate(die1, die2, die3, die4, die5);
+                return FullHouseScoreCalculator.Calculate(die1, die2, die3, die4, die5);
             }
 
             case ScoringType.FiveOfAKind:
