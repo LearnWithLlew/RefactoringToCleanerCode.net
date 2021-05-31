@@ -1,18 +1,18 @@
 ﻿public static class BigDiceGame
 {
-    public static int CalculateScore(ScoringType st, int die1, int die2, int die3, int dieFour, int fifthDie)
+    public static int CalculateScore(ScoringType st, int die1, int die2, int die3, int die4, int fifthDie)
     {
         const int bigScore = 50;
         switch (st)
         {
             case ScoringType.Pair:
             {
-                return FirstExtract(die1, die2, die3, dieFour, fifthDie);
+                return FirstExtract(die1, die2, die3, die4, fifthDie);
             }
 
             case ScoringType.TwoPair:
             {
-                return SecondExtract(die1, die2, die3, dieFour, fifthDie);
+                return SecondExtract(die1, die2, die3, die4, fifthDie);
             }
 
             case ScoringType.FullHouse:
@@ -29,7 +29,7 @@
                 tallies[die1 - 1] += 1;
                 tallies[die2 - 1] += 1;
                 tallies[die3 - 1] += 1;
-                tallies[dieFour - 1] += 1;
+                tallies[die4 - 1] += 1;
                 tallies[fifthDie - 1] += 1;
 
                 for (i = 0; i != 6; i += 1)
@@ -60,7 +60,7 @@
 
             case ScoringType.FiveOfAKind:
             {
-                int[] dice1 = {die1, die2, die3, dieFour, fifthDie};
+                int[] dice1 = {die1, die2, die3, die4, fifthDie};
                 var counts2 = new int[6];
                 foreach (var die in dice1)
                 {
