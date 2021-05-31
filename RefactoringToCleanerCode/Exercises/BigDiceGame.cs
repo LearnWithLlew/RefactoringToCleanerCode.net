@@ -11,12 +11,12 @@
 
             case ScoringType.TwoPair:
             {
-                return TwoPairFinder.SecondExtract(die1, die2, die3, die4, die5);
+                return TwoPairFinder.Calculate(die1, die2, die3, die4, die5);
             }
 
             case ScoringType.FullHouse:
             {
-                return FullHouseFinder.ThirdExtract(die1, die2, die3, die4, die5);
+                return FullHouseFinder.Calculate(die1, die2, die3, die4, die5);
             }
 
             case ScoringType.FiveOfAKind:

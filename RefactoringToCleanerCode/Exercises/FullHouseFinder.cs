@@ -1,6 +1,6 @@
 static internal class FullHouseFinder
 {
-    public static int ThirdExtract(int die1, int die2, int die3, int die4, int die5)
+    public static int Calculate(int die1, int die2, int die3, int die4, int die5)
     {
         int[] tallies;
         var _2 = false;
