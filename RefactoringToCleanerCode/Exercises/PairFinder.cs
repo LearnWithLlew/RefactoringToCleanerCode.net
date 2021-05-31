@@ -1,6 +1,6 @@
 static internal class PairFinder
 {
-    public static int FirstExtract(int die1, int die2, int d3, int dieFour, int fifthDie)
+    public static int Calculate(int die1, int die2, int d3, int dieFour, int fifthDie)
     {
         const int value = 2;
         int[] tallies1;
