@@ -31,7 +31,7 @@ We are looking at large method that we don't understand, and we want to clean up
 
 - [ ] ## Activity 1: Extract Paragraphs to methods
 
-    1. Identify a paragraph (`case`)
+    1. Identify a paragraph (a `case`)
     2. Extract a method to a Obvious Nonsense name
     3. Evaluate it at the caller (ignore the body)
     4. Fix or revert and try again
@@ -55,12 +55,12 @@ We are looking at large method that we don't understand, and we want to clean up
 
     1. Make similar things identical
     2. Surround each `if` with a block
-    3. Make each class non-static
-    4. Apply Refactoring Combo: Make non-static
-    5. Extract local variable
+    3. Apply Refactoring Combo: Provable Undo to make non-static
+    4. Make each class non-static
+    5. Extract local variables
     6. Extract interface
-    7. Many-of-one
-    8. Use base type
+    7. Use base type
+    8. Many-of-one
     9. Apply interface and move to many
     10. Extract list of scorers
     11. Extract apply scorers
@@ -78,13 +78,7 @@ We are looking at large method that we don't understand, and we want to clean up
 5. Does the right thing -> Intent
 
 6. Intent -> Domain Abstraction
-## Refactoring Combo: Make non-static
-
-1. Introduce unused local instance variable in method
-2. Introduce parameter
-3. Refactor -> Make method non-static
-4. Commit
-
+ 
 ## Refactoring Combo: Provable Undo
 
 **Insight:** A proven-correct refactoring means that the resulting code is the same as the beginning code. Therefore undoing a proven-correct refactoring is also a proven-correct refactoring.
