@@ -26,4 +26,9 @@ static internal class TwoPairScoreCalculator
 
         return 0;
     }
+
+    public static bool IsSecondCondition(ScoringType st)
+    {
+        return st == ScoringType.TwoPair;
+    }
 }

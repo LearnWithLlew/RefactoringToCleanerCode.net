@@ -7,7 +7,7 @@
             return PairScoreCalculator.Calculate(die1, die2, die3, die4, die5);
         }
 
-        if (IsSecondCondition(st))
+        if (TwoPairScoreCalculator.IsSecondCondition(st))
         {
             return TwoPairScoreCalculator.Calculate(die1, die2, die3, die4, die5);
         }
@@ -33,10 +33,5 @@
     private static bool IsThirdCondition(ScoringType st)
     {
         return st == ScoringType.FullHouse;
-    }
-
-    private static bool IsSecondCondition(ScoringType st)
-    {
-        return st == ScoringType.TwoPair;
     }
 }
