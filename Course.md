@@ -63,7 +63,7 @@ We are looking at large method that we don't understand, and we want to clean up
     6. Extract interface x 1
     7. Apply interface x 3
     8. Use base type x 4
-    9. Many-of-one, two, three, four
+    9. Apply Refactoring Combo: Many-of-one (two, three, four)
     11. Extract list of scorers
     12. Extract apply scorers
 
