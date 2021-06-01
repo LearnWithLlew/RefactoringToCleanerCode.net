@@ -42,4 +42,9 @@ static internal class FullHouseScoreCalculator
 
         return 0;
     }
+
+    public static bool IsThirdCondition(ScoringType st)
+    {
+        return st == ScoringType.FullHouse;
+    }
 }
