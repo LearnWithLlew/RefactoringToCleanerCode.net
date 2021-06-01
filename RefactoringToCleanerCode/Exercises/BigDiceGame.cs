@@ -7,7 +7,7 @@
             new PairScoreCalculator(), new TwoPairScoreCalculator(), new FullHouseScoreCalculator(),
             new FiveOfAKindScoreCalculator()
         };
-        foreach (ICalculator calculator in calculators)
+        foreach (var calculator in calculators)
         {
             if (calculator.IsSupported(st))
             {
