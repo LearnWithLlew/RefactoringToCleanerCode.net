@@ -11,7 +11,7 @@
         }
 
         {
-            TwoPairScoreCalculator calculator = new TwoPairScoreCalculator();
+            ICalculator calculator = new TwoPairScoreCalculator();
             if (calculator.IsSupported(st))
             {
                 return calculator.Calculate(die1, die2, die3, die4, die5);
