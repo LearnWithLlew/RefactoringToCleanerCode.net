@@ -21,7 +21,7 @@ internal class FiveOfAKindScoreCalculator
         return 0;
     }
 
-    public static bool IsSupported(ScoringType st)
+    public bool IsSupported(ScoringType st)
     {
         return st == ScoringType.FiveOfAKind;
     }
