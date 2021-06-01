@@ -23,9 +23,11 @@
             }
         }
 
-        if (FiveOfAKindScoreCalculator.IsSupported(st))
         {
-            return FiveOfAKindScoreCalculator.Calculate(die1, die2, die3, die4, die5);
+            if (FiveOfAKindScoreCalculator.IsSupported(st))
+            {
+                return FiveOfAKindScoreCalculator.Calculate(die1, die2, die3, die4, die5);
+            }
         }
 
         return 0;
