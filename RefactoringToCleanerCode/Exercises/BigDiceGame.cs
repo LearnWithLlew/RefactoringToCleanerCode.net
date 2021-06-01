@@ -7,7 +7,7 @@
             return PairScoreCalculator.Calculate(die1, die2, die3, die4, die5);
         }
 
-        if (st == ScoringType.TwoPair)
+        if (IsSecondCondition(st))
         {
             return TwoPairScoreCalculator.Calculate(die1, die2, die3, die4, die5);
         }
@@ -23,6 +23,11 @@
         }
 
         return 0;
+    }
+
+    private static bool IsSecondCondition(ScoringType st)
+    {
+        return st == ScoringType.TwoPair;
     }
 
     private static bool IsFirstCondition(ScoringType st)
