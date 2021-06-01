@@ -1,10 +1,13 @@
 # Refactoring to Cleaner Code
 
-## Setup
+## Run tests manually
 
-* [ ] Validate environment
-    * [ ] Run the tests (`Ctrl-U, L`)
-* [ ] NCrunch (`Alt-U`)
+* Validate the environment
+    * [ ] Run all tests (`Ctrl-U, L`)
+
+## Run tests automatically
+
+* Open NCrunch menu (`Alt-U`)
     * [ ] Enable NCrunch
     * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
 
@@ -14,7 +17,7 @@ We are looking at large method that we don't understand, and we want to clean up
 
 ## Starting Rules for today's refactorings
 
-- Automated refactorings "only" 
+- Automated refactorings "only"
 - Commit after each refactoring
 - Every refactoring commit prefixed with `r - `
 - Rotate typist on commit
