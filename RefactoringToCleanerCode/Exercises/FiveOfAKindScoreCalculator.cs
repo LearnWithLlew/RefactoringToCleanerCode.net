@@ -20,4 +20,9 @@ static internal class FiveOfAKindScoreCalculator
 
         return 0;
     }
+
+    public static bool IsFourthCondition(ScoringType st)
+    {
+        return st == ScoringType.FiveOfAKind;
+    }
 }
