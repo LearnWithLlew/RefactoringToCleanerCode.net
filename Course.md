@@ -60,12 +60,12 @@ We are looking at large method that we don't understand, and we want to clean up
     3. Apply Refactoring Combo: Provable Undo to make non-static
     4. Make each class non-static
     5. Extract local variables
-    6. Extract interface
-    7. Use base type
-    8. Many-of-one
-    9. Apply interface and move to many
-    10. Extract list of scorers
-    11. Extract apply scorers
+    6. Extract interface x 1
+    7. Apply interface x 3
+    8. Use base type x 4
+    9. Many-of-one, two, three, four
+    11. Extract list of scorers
+    12. Extract apply scorers
 
 # Resources
 
