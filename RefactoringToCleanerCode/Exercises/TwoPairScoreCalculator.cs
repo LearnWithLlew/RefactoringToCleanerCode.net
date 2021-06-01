@@ -1,6 +1,6 @@
 internal class TwoPairScoreCalculator
 {
-    public static int Calculate(int die1, int die2, int d3, int dieFour, int fifthDie)
+    public int Calculate(int die1, int die2, int d3, int dieFour, int fifthDie)
     {
         var counts1 = new int[6];
         counts1[die1 - 1]++;
