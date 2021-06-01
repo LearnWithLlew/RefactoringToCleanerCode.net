@@ -27,7 +27,7 @@ static internal class TwoPairScoreCalculator
         return 0;
     }
 
-    public static bool IsSecondCondition(ScoringType st)
+    public static bool IsSupported(ScoringType st)
     {
         return st == ScoringType.TwoPair;
     }
