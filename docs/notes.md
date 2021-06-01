@@ -2,3 +2,6 @@
 [Sparrow Decks for Code Smells](http://llewellynfalco.blogspot.com/p/sparrow-decks.html)
 [Duplication Coloring Book](https://github.com/LearnWithLlew/DuplicationColoringBook)
 [ApprovalTests](https://approvaltests.com/)
+[Emily Bache](https://github.com/emilybache)
+[Jay and Llewellyn refactor live](https://www.twitch.tv/llewellynfalco)
+[Jay and Llewellyn refactor recorded](https://www.youtube.com/user/isidoreus/search?query=sudoku)
