@@ -1,6 +1,6 @@
 internal class PairScoreCalculator
 {
-    public static int Calculate(int die1, int die2, int d3, int dieFour, int fifthDie)
+    public int Calculate(int die1, int die2, int d3, int dieFour, int fifthDie)
     {
         const int value = 2;
         int[] tallies1;

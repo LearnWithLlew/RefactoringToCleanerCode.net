@@ -5,7 +5,7 @@
         {
             if (new PairScoreCalculator().IsSupported(st))
             {
-                return PairScoreCalculator.Calculate(die1, die2, die3, die4, die5);
+                return new PairScoreCalculator().Calculate(die1, die2, die3, die4, die5);
             }
         }
 
