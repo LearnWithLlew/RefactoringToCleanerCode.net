@@ -10,7 +10,7 @@
         }
 
         {
-            if (TwoPairScoreCalculator.IsSupported(st))
+            if (new TwoPairScoreCalculator().IsSupported(st))
             {
                 return TwoPairScoreCalculator.Calculate(die1, die2, die3, die4, die5);
             }
