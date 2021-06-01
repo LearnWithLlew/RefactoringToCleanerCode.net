@@ -20,4 +20,9 @@ static internal class PairScoreCalculator
 
         return 0;
     }
+
+    public static bool IsFirstCondition(ScoringType st)
+    {
+        return st == ScoringType.Pair;
+    }
 }
