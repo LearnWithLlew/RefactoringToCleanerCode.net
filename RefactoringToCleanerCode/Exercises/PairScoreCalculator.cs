@@ -21,7 +21,7 @@ static internal class PairScoreCalculator
         return 0;
     }
 
-    public static bool IsFirstCondition(ScoringType st)
+    public static bool IsSupported(ScoringType st)
     {
         return st == ScoringType.Pair;
     }
