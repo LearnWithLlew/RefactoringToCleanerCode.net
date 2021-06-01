@@ -1,4 +1,4 @@
-internal class TwoPairScoreCalculator
+internal class TwoPairScoreCalculator: ICalculator
 {
     public int Calculate(int die1, int die2, int d3, int dieFour, int fifthDie)
     {
