@@ -1,15 +1,15 @@
-# Refactoring to Cleaner Code
-
-## Run tests manually
+# Run tests manually
 
 * Validate the environment
     * [ ] Run all tests (`Ctrl-U, L`)
 
-## Run tests automatically
+# Run tests automatically
 
 * Open NCrunch menu (`Alt-U`)
     * [ ] Enable NCrunch
     * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
+
+# Read this:
 
 ## Scenario
 
@@ -28,6 +28,8 @@ We are looking at large method that we don't understand, and we want to clean up
 2. Improve it
 3. Evaluate
 4. Commit (or revert)
+
+# Do this
 
 - [ ] ## Activity 1: Extract Paragraphs to methods
 
@@ -65,6 +67,8 @@ We are looking at large method that we don't understand, and we want to clean up
     10. Extract list of scorers
     11. Extract apply scorers
 
+# Resources
+
 ## Smell: bad names
 
 1. Missing/Misleading -> (Obvious) Nonsense
@@ -91,7 +95,7 @@ We are looking at large method that we don't understand, and we want to clean up
 6. Undo (CTRL-Z) once
 7. Commit
 
-# Refactoring Recipe: many-of-one
+## Refactoring Recipe: many-of-one
 
 > This is not a proven-correct refactoring.
 
