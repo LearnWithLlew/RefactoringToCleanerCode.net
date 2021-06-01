@@ -2,11 +2,11 @@
 
 ## Setup
 
-* [ ] Validate environment
-    * [ ] Run the tests (`Ctrl-U, L`)
-* [ ] NCrunch (`Alt-U`)
-    * [ ] Enable NCrunch
-    * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
+* [x] Validate environment
+    * [x] Run the tests (`Ctrl-U, L`)
+* [x] NCrunch (`Alt-U`)
+    * [x] Enable NCrunch
+    * [x] Ensure **Risk/Progress** window is open and visible and out of the way.
 
 ## Scenario
 
@@ -26,7 +26,7 @@ We are looking at large method that we don't understand, and we want to clean up
 3. Evaluate
 4. Commit (or revert)
 
-- [ ] ## Activity 1: Extract Paragraphs to methods
+- [x] ## Activity 1: Extract Paragraphs to methods
 
     1. Identify a paragraph (`case`)
     2. Extract a method to a Obvious Nonsense name
@@ -34,7 +34,7 @@ We are looking at large method that we don't understand, and we want to clean up
     4. Fix or revert and try again
     5. Commit
     
-- [ ] ## Activity 2: Move methods onto new classes
+- [x] ## Activity 2: Move methods onto new classes
 
     1. Pick a method
     2. Move into a better class
