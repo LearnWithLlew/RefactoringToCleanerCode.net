@@ -27,9 +27,10 @@
         }
 
         {
-            if (new FiveOfAKindScoreCalculator().IsSupported(st))
+            var calculator = new FiveOfAKindScoreCalculator();
+            if (calculator.IsSupported(st))
             {
-                return new FiveOfAKindScoreCalculator().Calculate(die1, die2, die3, die4, die5);
+                return calculator.Calculate(die1, die2, die3, die4, die5);
             }
         }
 
