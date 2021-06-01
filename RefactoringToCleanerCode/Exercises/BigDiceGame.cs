@@ -17,7 +17,7 @@
         }
 
         {
-            if (FullHouseScoreCalculator.IsSupported(st))
+            if (new FullHouseScoreCalculator().IsSupported(st))
             {
                 return FullHouseScoreCalculator.Calculate(die1, die2, die3, die4, die5);
             }
