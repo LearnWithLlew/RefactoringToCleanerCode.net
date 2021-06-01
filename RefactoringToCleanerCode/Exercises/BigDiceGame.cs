@@ -11,9 +11,10 @@
         }
 
         {
-            if (new TwoPairScoreCalculator().IsSupported(st))
+            var calculator = new TwoPairScoreCalculator();
+            if (calculator.IsSupported(st))
             {
-                return new TwoPairScoreCalculator().Calculate(die1, die2, die3, die4, die5);
+                return calculator.Calculate(die1, die2, die3, die4, die5);
             }
         }
 
