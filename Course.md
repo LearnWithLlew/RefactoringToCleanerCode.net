@@ -102,22 +102,22 @@ We are looking at large method that we don't understand, and we want to clean up
 Given:
 
 ```c#
-T x = ...;
-// do something with x
+SOMETYPE somevar = ...;
+// do something with somevar
 ```
 
 Becomes:
 
 ```c#
-foreach (T x in new T[]{ ... })
+foreach (SOMETYPE somevar in new SOMETYPE[]{ ... })
 {
-    // do something with x
+    // do something with somevar
 }
 ```
 
 1. Add curly braces (`{}`) around the body
 2. Prefix with `foreach (`
-3. Replace `=` with `in new T[]{`
+3. Replace `=` with `in new SOMETYPE[]{`
 4. Replace `;` with `})`
 
 
