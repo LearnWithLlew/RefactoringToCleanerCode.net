@@ -102,14 +102,14 @@ We are looking at large method that we don't understand, and we want to clean up
 Given:
 
 ```c#
-T x = ...;
-// do something with x
+SOMETYPE somevar = ...;
+// do something with somevar
 ```
 
 Becomes:
 
 ```c#
-foreach (T x in new T[]{ ... })
+foreach (SOMETYPE x in new T[]{ ... })
 {
     // do something with x
 }
