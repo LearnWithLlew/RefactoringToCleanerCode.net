@@ -13,7 +13,7 @@
 
 ## Scenario
 
-We are looking at large method that we don't understand, and we want to clean up. We are going to "follow our nose", leaning into the places we don't like and pulling out chunks and improving them.
+We are looking at a large method that we don't understand, and we want to clean up. We are going to "follow our nose", leaning into the places we don't like and pulling out chunks and improving them.
 
 ## Starting Rules for today's refactorings
 
