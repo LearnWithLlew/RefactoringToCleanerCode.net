@@ -1,13 +1,13 @@
 # Run tests manually
 
 * Validate the environment
-    * [ ] Run all tests (`Ctrl-U, L`)
+    * [x] Run all tests (`Ctrl-U, L`)
 
 # Run tests automatically
 
 * Open NCrunch menu (`Alt-U`)
-    * [ ] Enable NCrunch
-    * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
+    * [x] Enable NCrunch
+    * [x] Ensure **Risk/Progress** window is open and visible and out of the way.
 
 # Read this:
 
@@ -82,7 +82,7 @@ We are looking at large method that we don't understand, and we want to clean up
 5. Does the right thing -> Intent
 
 6. Intent -> Domain Abstraction
- 
+
 ## Refactoring Combo: Provable Undo
 
 **Insight:** A proven-correct refactoring means that the resulting code is the same as the beginning code. Therefore undoing a proven-correct refactoring is also a proven-correct refactoring.
