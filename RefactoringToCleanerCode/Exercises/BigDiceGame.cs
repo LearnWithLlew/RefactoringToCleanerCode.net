@@ -1,9 +1,9 @@
 ﻿public static class BigDiceGame
 {
-    public static int CalculateScore(ScoringType st, int die1, int die2, int die3, int die4, int die5)
+    public static int CalculateScore(ScoringType scoringType, int die1, int die2, int die3, int die4, int die5)
     {
         const int bigScore = 50;
-        switch (st)
+        switch (scoringType)
         {
             case ScoringType.Pair:
             {
