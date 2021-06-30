@@ -7,7 +7,7 @@
         {
             case ScoringType.Pair:
             {
-                return ScoreAPairOfDice.AppleSauce(die1, die2, die3, die4, die5);
+                return ScoreEvaluatorForAPair.AppleSauce(die1, die2, die3, die4, die5);
             }
 
             case ScoringType.TwoPair:

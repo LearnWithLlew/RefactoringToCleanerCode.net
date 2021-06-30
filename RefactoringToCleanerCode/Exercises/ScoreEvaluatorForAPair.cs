@@ -1,4 +1,4 @@
-static internal class ScoreAPairOfDice
+static internal class ScoreEvaluatorForAPair
 {
     public static int AppleSauce(int die1, int die2, int d3, int dieFour, int fifthDie)
     {
