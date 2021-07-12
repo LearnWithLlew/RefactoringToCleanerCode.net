@@ -51,7 +51,7 @@ We are looking at a large method that we don't understand, and we want to clean 
 	1. Convert `switch` to `if`/`else`, commit
 	2. Remove redundant `else` in method, commit
 	3. Extract condition to a method with a Nonsense name, commit
-	4. Move method, commit
+	4. Move the method to the corresponding class, commit
 	
  - [ ] ## Activity 4: Remove duplication
 
