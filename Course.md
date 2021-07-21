@@ -62,6 +62,7 @@ We are looking at a large method that we don't understand, and we want to clean 
     1. Introduce local variables
     1. Extract interface x 1
     1. Apply interface x 3
+    1. Specify type explicitly
     1. Use base type x 4
     1. Apply Refactoring Combo: Many-of-one (two, three, four)
     1. Extract list of scorers
@@ -115,7 +116,7 @@ foreach (SOMETYPE somevar in new SOMETYPE[]{ ... })
 }
 ```
 
-1. Add curly braces (`{}`) around the body
+1. Add curly braces (`{}`) around the eventual body
 2. Prefix with `foreach (`
 3. Replace `=` with `in new SOMETYPE[]{`
 4. Replace `;` with `})`
