@@ -56,16 +56,16 @@ We are looking at a large method that we don't understand, and we want to clean 
  - [ ] ## Activity 4: Remove duplication
 
     1. Make similar things identical
-    2. Surround each `if` with a block
-    3. Apply Refactoring Combo: Provable Undo to make non-static
-    4. Make each class non-static
-    5. Extract local variables
-    6. Extract interface x 1
-    7. Apply interface x 3
-    8. Use base type x 4
-    9. Apply Refactoring Combo: Many-of-one (two, three, four)
-    11. Extract list of scorers
-    12. Extract apply scorers
+    1. Make each class non-static
+    1. Apply Refactoring Combo: Provable Undo to make non-static
+    1. Surround each `if` with a block
+    1. Introduce local variables
+    1. Extract interface x 1
+    1. Apply interface x 3
+    1. Use base type x 4
+    1. Apply Refactoring Combo: Many-of-one (two, three, four)
+    1. Extract list of scorers
+    1. Extract apply scorers
 
 # Resources
 
