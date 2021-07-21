@@ -25,8 +25,8 @@ We are looking at a large method that we don't understand, and we want to clean 
 ## Improvement Loop
 
 1. Identify a smell
-2. Improve it
-3. Evaluate
+2. Refactor
+3. Decide if you like the result
 4. Commit (or revert)
 
 # Do this
