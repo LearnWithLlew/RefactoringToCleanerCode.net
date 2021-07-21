@@ -65,8 +65,8 @@ We are looking at a large method that we don't understand, and we want to clean 
     1. Specify type explicitly
     1. Use base type x 4
     1. Apply Refactoring Combo: Many-of-one (two, three, four)
-    1. Extract list of scorers
-    1. Extract apply scorers
+    1. Extract variable `scorers`
+    1. Extract method `ApplyScorers()`
 
 # Resources
 
