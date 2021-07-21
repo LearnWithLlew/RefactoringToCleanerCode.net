@@ -117,7 +117,7 @@ foreach (SOMETYPE somevar in new SOMETYPE[]{ ... })
 ```
 
 1. Add curly braces (`{}`) around the eventual body
-2. Prefix with `foreach (`
+2. Prefix variable declaration with `foreach (`
 3. Replace `=` with `in new SOMETYPE[]{`
 4. Replace `;` with `})`
 
