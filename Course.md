@@ -1,13 +1,13 @@
 # Run tests manually
 
 * Validate the environment
-    * [ ] Run all tests (`Ctrl-U, L`)
+  * [ ] Run all tests (`Ctrl-U, L`)
 
 # Run tests automatically
 
 * Open NCrunch menu (`Alt-U`)
-    * [ ] Enable NCrunch
-    * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
+  * [ ] Enable NCrunch
+  * [ ] Ensure **Risk/Progress** window is open and visible and out of the way.
 
 # Read this:
 
@@ -33,40 +33,34 @@ We are looking at a large method that we don't understand, and we want to clean 
 
 - [ ] ## Activity 1: Extract Paragraphs to methods
 
-    1. Identify a paragraph (a `case`)
-    2. Extract a method to a Obvious Nonsense name
-    3. Evaluate it at the caller (ignore the body)
-    4. Fix or revert and try again
-    5. Commit
-    
-- [ ] ## Activity 2: Move methods onto new classes
+  1. Select a paragraph (a `case`) [`CTRL-W`]
+  2. Extract a method to a Obvious Nonsense name [`CTRL-R, M`]
+  3. Decide if you like the call (ignore the body)
+  4. Fix and commit, or revert and try again
 
-    1. Pick a method
-    2. Move into a better class
-    3. Evaluate at caller
-    4. Commit (or revert)
+- [ ] ## Activity 2: Move behaviors onto new classes
 
-- [ ] ## Activity 3: Clean up the main method
+  1. Move each method onto a new class x 4 [`CTRL-R, O`]
+  2. Convert `switch` to `if`/`else` [`ALT-ENTER`]
+  3. Remove redundant `else` in method [`ALT-ENTER`]
+  4. Select the condition
+  5. Extract to a method with a Nonsense name
+  6. Move the method to the corresponding class, commit
 
-	1. Convert `switch` to `if`/`else`, commit
-	2. Remove redundant `else` in method, commit
-	3. Extract condition to a method with a Nonsense name, commit
-	4. Move the method to the corresponding class, commit
-	
- - [ ] ## Activity 4: Remove duplication
+ - [ ] ## Activity 3: Remove duplication
 
-    1. Make similar things identical
-    1. Make each class non-static
-    1. Apply Refactoring Combo: Provable Undo to make non-static
-    1. Surround each `if` with a block
-    1. Introduce local variables
-    1. Extract interface x 1
-    1. Apply interface x 3
-    1. Specify type explicitly
-    1. Use base type x 4
-    1. Apply Refactoring Combo: Many-of-one (two, three, four)
-    1. Extract variable `scorers`
-    1. Extract method `ApplyScorers()`
+   1. Make similar things identical
+   1. Make each class non-static [`CTRL-SHIFT-R`]
+   1. Apply Refactoring Combo: Undo Make Static
+   1. Surround each `if` with a block [`ALT-ENTER`]
+   1. Introduce local variables [`CTRL-R, V`]
+   1. Extract interface x 1 [`CTRL-SHIFT-R`]
+   1. Apply interface x 3
+   1. Specify type explicitly
+   1. Use base type x 4
+   1. Apply Refactoring Combo: Many-of-one (two, three, four)
+   1. Extract variable `scorers`
+   1. Extract method `ApplyScorers()`
 
 # Resources
 
@@ -83,8 +77,8 @@ We are looking at a large method that we don't understand, and we want to clean 
 5. Does the right thing -> Intent
 
 6. Intent -> Domain Abstraction
- 
-## Refactoring Combo: Provable Undo
+
+## Refactoring Combo: Undo Make Static
 
 **Insight:** A proven-correct refactoring means that the resulting code is the same as the beginning code. Therefore undoing a proven-correct refactoring is also a proven-correct refactoring.
 
@@ -93,7 +87,7 @@ We are looking at a large method that we don't understand, and we want to clean 
 3. Execute automated refactoring to undo #1
 4. Save All
 5. Verify that Git shows no changes
-6. Undo (CTRL-Z) once
+6. Undo the automated refactoring
 7. Commit
 
 ## Refactoring Recipe: many-of-one
