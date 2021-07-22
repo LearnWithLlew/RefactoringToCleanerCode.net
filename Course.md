@@ -46,6 +46,7 @@ We are looking at a large method that we don't understand, and we want to clean 
   4. Select the condition
   5. Extract to a method with a Nonsense name
   6. Move the method to the corresponding class, commit
+  7. Repeat x 3
 
  - [ ] ## Activity 3: Remove duplication
 
