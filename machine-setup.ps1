@@ -12,6 +12,10 @@ cinst typora
 # iwr https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Grahamvs/vsextensions/ReSharperSilentCleanupOnSave/0.1/vspackage -O ReSharper_SilentCleanupOnSavePreview.vsix
 # & "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\VSIXInstaller.exe" .\ReSharper_SilentCleanupOnSavePreview.vsix  /q
 
+# ReSharper has a bug that fails on the code in this repo, so downgrade to where it works.
+choco uninstall resharper-ultimate-all
+choco install resharper-ultimate-all --version=2021.2
+
 mkdir C:\Source\
 pushd C:\Source\
 
