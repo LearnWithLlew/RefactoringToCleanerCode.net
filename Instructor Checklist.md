@@ -24,8 +24,12 @@
 - [ ] Open Solution, build, run tests, turn off NCrunch
 	- May need to add real NuGet feed (https://api.nuget.org/v3/index.json) and remove offline packages feed
 - [ ] Check keyboard shortcuts in Visual Studio
-    - [ ] Ctrl-Shift-R
-    - [ ] Ctrl-U, Ctrl-L
+    - [ ] `Ctrl-Shift-R`
+    - [ ] `Ctrl-U`, `Ctrl-L`
+    - [ ] `Ctrl-R`, `M`
+        - To trigger prompt about conflicting shortcuts.
+        - Select Resharper shortcuts.
+        - Check `Apply to All Shortcuts`.
 - [ ] Get slides onto machine via Office 365
 - [ ] Make a branch
 - [ ] Enable `Show procedure line separators`
