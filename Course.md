@@ -51,7 +51,7 @@ We are looking at a large method that we don't understand, and we want to clean 
  - [ ] ## Activity 3: Remove duplication
 
    1. Make similar things identical
-   1. Make each class non-static [`CTRL-SHIFT-R`]
+   1. Make each class non-static [recipe]
    1. Apply Refactoring Combo: Undo Make Static
    1. Surround each `if` with a block [`ALT-ENTER`]
    1. Introduce local variables [`CTRL-R, V`]
