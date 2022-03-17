@@ -21,6 +21,7 @@ We are looking at a large method that we don't understand, and we want to clean 
 - Commit after each refactoring
 - Every refactoring commit prefixed with `r - `
 - Rotate typist on commit
+- No context menu
 
 ## Improvement Loop
 
@@ -34,13 +35,13 @@ We are looking at a large method that we don't understand, and we want to clean 
 - [ ] ## Activity 1: Extract Paragraphs to methods
 
   1. Select a paragraph (a `case`) [`CTRL-W`]
-  2. Extract a method to a Obvious Nonsense name [`CTRL-R, M`]
+  2. Extract a method to a Obvious Nonsense name [`CTRL-SHIFT-R`]
   3. Decide if you like the call (ignore the body)
   4. Fix and commit, or revert and try again
 
 - [ ] ## Activity 2: Move behaviors onto new classes
 
-  1. Move each method onto a new class x 4 [`CTRL-R, O`]
+  1. Move each method onto a new class x 4 [`CTRL-SHIFT-R`]
   2. Convert `switch` to `if`/`else` [`ALT-ENTER`]
   3. Remove redundant `else` in method [`ALT-ENTER`]
   4. Select the condition
@@ -54,7 +55,7 @@ We are looking at a large method that we don't understand, and we want to clean 
    1. Make each class non-static [recipe]
    1. Apply Refactoring Combo: Undo Make Static
    1. Surround each `if` with a block [`ALT-ENTER`]
-   1. Introduce local variables [`CTRL-R, V`]
+   1. Introduce local variables [`CTRL-SHIFT-R`]
    1. Extract interface x 1 [`CTRL-SHIFT-R`]
    1. Apply interface x 3
    1. Specify type explicitly
